@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/View/LoginForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Change_zone_&amp;_status.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Orders.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/back_Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/new_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/place_order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/product.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/reports.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/View/AdminDashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2c4c6a2401d18e17b7bc6a43b849df4c8a73b4c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2c4c6a2401d18e17b7bc6a43b849df4c8a73b4c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Navy Blue Minimalist Text Logo (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Navy_Blue_Minimalist_Text_Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/LoginForm.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/LoginForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_directory_selection": "D:/E & E Service center Pos,inventry management sys(final javaFX project)/Service Center Project/service-center-project-with-layered-architecture/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\E &amp; E Service center Pos,inventry management sys(final javaFX project)\Service Center Project\service-center-project-with-layered-architecture\src\main\resources\Images" />
       <recent name="D:\E &amp; E Service center Pos,inventry management sys(final javaFX project)\Service Center Project\service-center-project-with-layered-architecture\src\main\resources\View" />
     </key>
   </component>
@@ -101,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704713447481</updated>
       <workItem from="1704713448495" duration="211000" />
-      <workItem from="1704713673019" duration="1705000" />
+      <workItem from="1704713673019" duration="8909000" />
     </task>
     <servers />
   </component>
