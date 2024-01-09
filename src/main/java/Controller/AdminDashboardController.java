@@ -18,4 +18,11 @@ public class AdminDashboardController {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/LoginForm.fxml"))));
         stage.show();
     }
+
+    public void newuserButtonOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/NewUser.fxml"))));
+        stage.setTitle("Create New User");
+        stage.show();
+    }
 }

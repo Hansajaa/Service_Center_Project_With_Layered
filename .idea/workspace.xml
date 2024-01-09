@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Change_zone_&amp;_status.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Orders.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/back_Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/new_user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/place_order.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/product.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/reports.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/View/AdminDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2c4c6a2401d18e17b7bc6a43b849df4c8a73b4c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2c4c6a2401d18e17b7bc6a43b849df4c8a73b4c" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Admin Dashboard interface complete">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/NewUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/View/NewUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Navy Blue Minimalist Text Logo (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Navy_Blue_Minimalist_Text_Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/LoginForm.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Change_zone_&amp;_status.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Change_zone_and_status.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/AdminDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/AdminDashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -53,6 +43,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_directory_selection": "D:/E & E Service center Pos,inventry management sys(final javaFX project)/Service Center Project/service-center-project-with-layered-architecture/src/main/java",
@@ -112,11 +103,24 @@
       <option name="presentableId" value="Default" />
       <updated>1704713447481</updated>
       <workItem from="1704713448495" duration="211000" />
-      <workItem from="1704713673019" duration="8909000" />
+      <workItem from="1704713673019" duration="14695000" />
     </task>
+    <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
+      <option name="closed" value="true" />
+      <created>1704739958986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704739958986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Admin Dashboard interface complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Dashboard interface complete" />
   </component>
 </project>
