@@ -8,12 +8,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class NewUserController {
+public class ProductController {
 
-    public BorderPane newUserPane;
+    public BorderPane productPane;
 
     public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) newUserPane.getScene().getWindow();
+        Stage stage= (Stage) productPane.getScene().getWindow();
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/AdminDashboard.fxml"))));
         stage.setTitle("Admin Dashboard");
         stage.show();

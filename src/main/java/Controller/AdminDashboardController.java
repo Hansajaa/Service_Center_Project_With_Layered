@@ -16,6 +16,7 @@ public class AdminDashboardController {
     public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/LoginForm.fxml"))));
+        stage.setTitle("Login");
         stage.show();
     }
 
@@ -23,6 +24,13 @@ public class AdminDashboardController {
         Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/NewUser.fxml"))));
         stage.setTitle("Create New User");
+        stage.show();
+    }
+
+    public void productButtonOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Product.fxml"))));
+        stage.setTitle("Product");
         stage.show();
     }
 }

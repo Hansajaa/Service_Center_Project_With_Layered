@@ -13,3 +13,5 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 _
 /src/main/java/Controller/NewUserController.java,1\b\1bf13ebb8edee370c08c47494ef979bc44f3dbdf
+_
+/src/main/java/Controller/ProductController.java,c\9\c9a80c611a9f927e858cc41011a2d2ed8f6a9e99
