@@ -88,7 +88,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton accessibleRole="IMAGE_VIEW" layoutX="248.0" layoutY="10.0" opacity="0.8" prefHeight="106.0" prefWidth="129.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="5">
+                  <JFXButton accessibleRole="IMAGE_VIEW" layoutX="248.0" layoutY="10.0" onAction="#placeOrderButtonOnAction" opacity="0.8" prefHeight="106.0" prefWidth="129.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="5">
                      <graphic>
                         <ImageView fitHeight="67.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
                            <image>

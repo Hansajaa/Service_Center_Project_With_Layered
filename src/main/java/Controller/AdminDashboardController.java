@@ -33,4 +33,11 @@ public class AdminDashboardController {
         stage.setTitle("Product");
         stage.show();
     }
+
+    public void placeOrderButtonOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/PlaceOrder.fxml"))));
+        stage.setTitle("Place Order");
+        stage.show();
+    }
 }
