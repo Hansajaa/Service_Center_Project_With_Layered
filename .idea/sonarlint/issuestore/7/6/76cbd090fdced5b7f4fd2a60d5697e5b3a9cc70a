@@ -1,0 +1,8 @@
+
+
+java:S1104"]Make employeeLoginPane a static final constant or non-public and provide accessors if needed.(Ç¾Îşÿÿÿÿ8ëêÒ÷Î1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î8ëêÒ÷Î1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œ´Ø¹ûÿÿÿÿ8îêÒ÷Î1
+O
+java:S1172"2Remove this unused method parameter "actionEvent".(öÛç‰8ğêÒ÷Î1
