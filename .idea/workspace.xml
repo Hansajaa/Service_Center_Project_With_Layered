@@ -4,56 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Home.fxml file create">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/0756bd23745a9a4eb4ea36543242ac369f0d68f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1bd462141a330fb76b9bb34dbbddc2e29ab7e863" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1bf13ebb8edee370c08c47494ef979bc44f3dbdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c8254f898df665618daad3a5a2db28989a7e38" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bdb67357662b91cf0657821941bdd9e2fd045f1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/6069c9b91d8986545216f82160e7107b7e537d36" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76cbd090fdced5b7f4fd2a60d5697e5b3a9cc70a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bfb8baed1eae9c0474e1a6e099557b250c52c130" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3fc922663473a7dad25c621024ebdb4d1eadb30" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c9a80c611a9f927e858cc41011a2d2ed8f6a9e99" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3f35ff3199e1b30d0c7e93df74d5369ac8331c5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f4ea416853d6209eccf86500fa09e9f8e8b93501" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/0756bd23745a9a4eb4ea36543242ac369f0d68f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/b/1bd462141a330fb76b9bb34dbbddc2e29ab7e863" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/b/1bf13ebb8edee370c08c47494ef979bc44f3dbdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/6/26c8254f898df665618daad3a5a2db28989a7e38" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/b/4bdb67357662b91cf0657821941bdd9e2fd045f1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/0/6069c9b91d8986545216f82160e7107b7e537d36" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/6/76cbd090fdced5b7f4fd2a60d5697e5b3a9cc70a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/f/bfb8baed1eae9c0474e1a6e099557b250c52c130" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/3/c3fc922663473a7dad25c621024ebdb4d1eadb30" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/9/c9a80c611a9f927e858cc41011a2d2ed8f6a9e99" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/3/f3f35ff3199e1b30d0c7e93df74d5369ac8331c5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/4/f4ea416853d6209eccf86500fa09e9f8e8b93501" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/EmployeeLoginFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/HomeFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/View/HomeForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2c4c6a2401d18e17b7bc6a43b849df4c8a73b4c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2c4c6a2401d18e17b7bc6a43b849df4c8a73b4c" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Create employee login page, home page and set navigation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ChangeStatusAndZoneFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/OrderFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/View/ChangeStatusAndZoneForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/View/OrderForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bdb67357662b91cf0657821941bdd9e2fd045f1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bdb67357662b91cf0657821941bdd9e2fd045f1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminLoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NewUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/NewUserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PlaceOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/AdminDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/AdminDashboardForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/EmployeeLoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/AdminLoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/NewUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/NewUserForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/PlaceOrder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/PlaceOrderForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/Product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ProductForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/AdminDashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/AdminDashboardForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704713447481</updated>
       <workItem from="1704713448495" duration="211000" />
-      <workItem from="1704713673019" duration="25342000" />
+      <workItem from="1704713673019" duration="30286000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -187,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704811471549</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create employee login page, home page and set navigation">
+      <option name="closed" value="true" />
+      <created>1704816698200</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704816698200</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +179,7 @@
     <MESSAGE value="product interface design complete" />
     <MESSAGE value="place order interface design complete" />
     <MESSAGE value="Home.fxml file create" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home.fxml file create" />
+    <MESSAGE value="Create employee login page, home page and set navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create employee login page, home page and set navigation" />
   </component>
 </project>

@@ -40,4 +40,18 @@ public class AdminDashboardFormController {
         stage.setTitle("Place Order");
         stage.show();
     }
+
+    public void ordersButtonOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/OrderForm.fxml"))));
+        stage.setTitle("Orders");
+        stage.show();
+    }
+
+    public void changeZoneButtonOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/ChangeStatusAndZoneForm.fxml"))));
+        stage.setTitle("Change Zone & Change Status");
+        stage.show();
+    }
 }

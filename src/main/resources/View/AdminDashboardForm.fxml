@@ -113,7 +113,7 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <JFXButton accessibleRole="IMAGE_VIEW" opacity="0.8" prefHeight="106.0" prefWidth="129.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="1">
+                  <JFXButton accessibleRole="IMAGE_VIEW" onAction="#ordersButtonOnAction" opacity="0.8" prefHeight="106.0" prefWidth="129.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="1">
                      <graphic>
                         <ImageView fitHeight="64.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -122,7 +122,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton accessibleRole="IMAGE_VIEW" layoutX="60.0" layoutY="10.0" opacity="0.8" prefHeight="106.0" prefWidth="129.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="3">
+                  <JFXButton accessibleRole="IMAGE_VIEW" layoutX="60.0" layoutY="10.0" onAction="#changeZoneButtonOnAction" opacity="0.8" prefHeight="106.0" prefWidth="129.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="3">
                      <graphic>
                         <ImageView fitHeight="61.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                            <image>
