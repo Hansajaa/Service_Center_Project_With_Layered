@@ -14,8 +14,8 @@ public class ProductFormController {
 
     public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
         Stage stage= (Stage) productPane.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/AdminDashboardForm.fxml"))));
-        stage.setTitle("Admin Dashboard");
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/DashboardForm.fxml"))));
+        stage.setTitle("Dashboard");
         stage.show();
     }
 }

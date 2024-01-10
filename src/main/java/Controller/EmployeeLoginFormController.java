@@ -11,8 +11,11 @@ import java.io.IOException;
 public class EmployeeLoginFormController {
     public BorderPane employeeLoginPane;
 
-    public void loginButtonOnAction(ActionEvent actionEvent) {
-
+    public void loginButtonOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage)employeeLoginPane.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/DashboardForm.fxml"))));
+        stage.setTitle("Dashboard");
+        stage.show();
     }
 
     public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
