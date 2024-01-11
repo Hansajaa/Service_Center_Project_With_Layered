@@ -77,3 +77,9 @@ O
 src/main/java/Dto/AdminDto.java,b\6\b676813bf52398df0fc064b0c8e2a0a4f91808fc
 U
 %src/main/java/Entity/AdminEntity.java,1\8\1828786d9ef57a77be75878a093f62329d734a1f
+O
+src/main/java/Dao/AdminDao.java,a\e\ae61771e11601799112b1d6f2a38c23cff908ed1
+Y
+)src/main/java/Dao/util/HIbernateUtil.java,3\d\3d96a02b215036bf0d3ba7c685dbeaaff3e725c9
+Y
+)src/main/java/Dao/util/HibernateUtil.java,e\7\e76837e8e0db1baccfdf0ed24249b7bab6b43042

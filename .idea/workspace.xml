@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="remove employee dashboard">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dto/AdminDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/AdminEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/AdminLoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/AdminLoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/EmployeeLoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/EmployeeLoginForm.fxml" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Hibernate Initialize">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/AdminDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/util/HIbernateUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704713447481</updated>
       <workItem from="1704713448495" duration="211000" />
-      <workItem from="1704713673019" duration="37644000" />
+      <workItem from="1704713673019" duration="38103000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -170,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704918349364</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Hibernate Initialize">
+      <option name="closed" value="true" />
+      <created>1704973630706</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704973630706</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +198,7 @@
     <MESSAGE value="Create employee login page, home page and set navigation" />
     <MESSAGE value="Orders and Change Status And Zone interface design complete" />
     <MESSAGE value="remove employee dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove employee dashboard" />
+    <MESSAGE value="Hibernate Initialize" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate Initialize" />
   </component>
 </project>
