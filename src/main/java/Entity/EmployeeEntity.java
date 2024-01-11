@@ -9,9 +9,10 @@ import javax.persistence.Id;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
-@Entity
-public class AdminEntity {
+@Entity(name = "Employee")
+public class EmployeeEntity {
+
+    private String username;
     @Id
     private String email;
     private String password;

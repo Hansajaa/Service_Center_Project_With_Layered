@@ -82,10 +82,10 @@
                                     <Font name="System Bold" size="20.0" />
                                  </font>
                               </Text>
-                              <JFXTextField focusColor="#2a9d8f" promptText="Username" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                              <JFXTextField focusColor="#2a9d8f" layoutX="60.0" layoutY="97.0" promptText="Email" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                              <JFXTextField focusColor="#2a9d8f" layoutX="60.0" layoutY="164.0" promptText="Password" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                              <JFXButton prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #2A9D8F; -fx-background-radius: 10px;" text="Create New Account" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                              <JFXTextField fx:id="txtUsername" focusColor="#2a9d8f" promptText="Username" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <JFXTextField fx:id="txtEmail" focusColor="#2a9d8f" layoutX="60.0" layoutY="97.0" promptText="Email" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <JFXTextField fx:id="txtPassword" focusColor="#2a9d8f" layoutX="60.0" layoutY="164.0" promptText="Password" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <JFXButton onAction="#newAccountButtonOnAction" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #2A9D8F; -fx-background-radius: 10px;" text="Create New Account" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
