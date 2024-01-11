@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Orders and Change Status And Zone interface design complete">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76cbd090fdced5b7f4fd2a60d5697e5b3a9cc70a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76cbd090fdced5b7f4fd2a60d5697e5b3a9cc70a" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="remove employee dashboard">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dto/AdminDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/AdminEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AdminLoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminLoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ChangeStatusAndZoneFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ChangeStatusAndZoneFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EmployeeLoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EmployeeLoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NewUserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/NewUserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/OrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/OrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/AdminDashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/DashboardForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/AdminLoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/AdminLoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/EmployeeLoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/EmployeeLoginForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +52,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
@@ -108,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704713447481</updated>
       <workItem from="1704713448495" duration="211000" />
-      <workItem from="1704713673019" duration="32510000" />
+      <workItem from="1704713673019" duration="37644000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -166,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704916148222</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="remove employee dashboard">
+      <option name="closed" value="true" />
+      <created>1704918349364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704918349364</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +195,7 @@
     <MESSAGE value="Home.fxml file create" />
     <MESSAGE value="Create employee login page, home page and set navigation" />
     <MESSAGE value="Orders and Change Status And Zone interface design complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Orders and Change Status And Zone interface design complete" />
+    <MESSAGE value="remove employee dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove employee dashboard" />
   </component>
 </project>
