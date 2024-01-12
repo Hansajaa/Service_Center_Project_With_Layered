@@ -1,5 +1,6 @@
 package Bo;
 
+import Bo.Custom.Impl.AdminBoImpl;
 import Bo.Custom.Impl.EmployeeBoImpl;
 import Dao.util.BoType;
 
@@ -18,6 +19,7 @@ public class BoFactory {
     public <T extends SuperBo>T boType(BoType type){
         switch (type){
             case EMPLOYEE: return (T) new EmployeeBoImpl();
+            case ADMIN: return (T) new AdminBoImpl();
         }
         return null;
     }

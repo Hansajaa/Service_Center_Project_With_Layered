@@ -40,9 +40,12 @@ public class NewUserFormController {
         );
 
         if (isRegistered){
-            new Alert(Alert.AlertType.CONFIRMATION,"New User Created :)");
+            new Alert(Alert.AlertType.CONFIRMATION,"New User Created :)").show();
+            txtUsername.setText("");
+            txtEmail.setText("");
+            txtPassword.setText("");
         }else{
-            new Alert(Alert.AlertType.CONFIRMATION,"Something Went Wrong :(");
+            new Alert(Alert.AlertType.CONFIRMATION,"Something Went Wrong :(").show();
         }
     }
 }

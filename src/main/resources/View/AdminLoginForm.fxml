@@ -130,7 +130,7 @@
                               </JFXButton>
                            </children>
                         </GridPane>
-                        <Hyperlink alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="267.0" text="If forgot password ?" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Hyperlink alignment="CENTER" contentDisplay="CENTER" onAction="#forgotPasswordButtonOnAction" prefHeight="23.0" prefWidth="267.0" text="If forgot password ?" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                         <JFXPasswordField focusColor="#01c3b2" promptText="Password" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                      </children>
                   </GridPane>

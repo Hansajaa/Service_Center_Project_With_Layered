@@ -1,6 +1,0 @@
-
-t
-java:S1104"WMake productPane a static final constant or non-public and provide accessors if needed.(ïşÍƒ8“ÚŞìÎ1
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î
-O
-java:S1172"2Remove this unused method parameter "actionEvent".(öÛç‰8ŸˆàìÎ1
