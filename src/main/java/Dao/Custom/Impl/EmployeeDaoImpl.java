@@ -33,4 +33,11 @@ public class EmployeeDaoImpl implements EmployeeDao<EmployeeEntity,String> {
         return true;
     }
 
+    @Override
+    public EmployeeEntity authenticate(String value) {
+        Session session = HibernateUtil.getSession();
+
+        return session.find(EmployeeEntity.class,value);
+    }
+
 }

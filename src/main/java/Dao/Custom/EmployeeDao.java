@@ -8,4 +8,6 @@ public interface EmployeeDao<T,dataType> extends SuperDao {
     boolean registerEmployee(T entity);
 
     boolean changePassword(T entity);
+
+    T authenticate(dataType value);
 }

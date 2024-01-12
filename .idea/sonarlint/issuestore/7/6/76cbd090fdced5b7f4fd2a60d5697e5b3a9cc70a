@@ -1,8 +1,14 @@
 
 
-java:S1104"]Make employeeLoginPane a static final constant or non-public and provide accessors if needed.(Ç¾Îşÿÿÿÿ8ëêÒ÷Î1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î8ëêÒ÷Î1
+java:S1104"]Make employeeLoginPane a static final constant or non-public and provide accessors if needed.(Ç¾Îşÿÿÿÿ8íì×ìÏ1
+v
+java:S1104"TMake txtEmail a static final constant or non-public and provide accessors if needed.(Ø¦½üÿÿÿÿ8íì×ìÏ1
+t
+java:S1104"WMake txtPassword a static final constant or non-public and provide accessors if needed.(Óšº÷8íì×ìÏ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î8íì×ìÏ1
 O
-java:S1172"2Remove this unused method parameter "actionEvent".(½íŸˆ8ğêÒ÷Î1
+java:S1172"2Remove this unused method parameter "actionEvent".(½íŸˆ8÷ì×ìÏ1
 O
-java:S1172"2Remove this unused method parameter "actionEvent".(öÛç‰8¬èÓ§Ï1
+java:S11723"2Remove this unused method parameter "actionEvent".(öÛç‰8í×ìÏ1
+O
+java:S11729"2Remove this unused method parameter "actionEvent".(œì¨¯8‚í×ìÏ1

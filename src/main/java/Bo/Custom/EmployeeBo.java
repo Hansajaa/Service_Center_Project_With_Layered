@@ -9,4 +9,6 @@ public interface EmployeeBo extends SuperBo {
     boolean changePassword(EmployeeDto dto);
 
     String encryptPassword(String password);
+
+    boolean authenticate(EmployeeDto dto);
 }

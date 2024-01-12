@@ -15,8 +15,8 @@ public class AdminDashboardFormController {
 
     public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) adminDashboardPane.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/AdminLoginForm.fxml"))));
-        stage.setTitle("Login");
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/HomeForm.fxml"))));
+        stage.setTitle("Home");
         stage.show();
     }
 

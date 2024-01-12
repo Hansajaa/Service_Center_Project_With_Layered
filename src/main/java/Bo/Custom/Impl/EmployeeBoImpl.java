@@ -69,4 +69,15 @@ public class EmployeeBoImpl implements EmployeeBo {
 
         return encryptedpassword;
     }
+
+    @Override
+    public boolean authenticate(EmployeeDto dto) {
+        EmployeeEntity employee = dao.authenticate(dto.getEmail());
+
+        if (employee.getPassword().equals(encryptPassword(dto.getPassword()))){
+            return true;
+        }
+        return false;
+
+    }
 }
