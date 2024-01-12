@@ -19,4 +19,14 @@ public class AdminBoImpl implements AdminBo {
                 )
         );
     }
+
+    @Override
+    public boolean authenticate(AdminDto dto) {
+        AdminEntity admin = dao.authenticate(dto.getEmail());
+
+        if (dto.getPassword().equals(admin.getPassword())){
+            return true;
+        }
+        return false;
+    }
 }

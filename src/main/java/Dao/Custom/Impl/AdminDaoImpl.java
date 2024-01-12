@@ -22,4 +22,16 @@ public class AdminDaoImpl implements AdminDao<AdminEntity,String> {
 
         return true;
     }
+
+    @Override
+    public AdminEntity authenticate(String value) {
+        Session session = HibernateUtil.getSession();
+
+        AdminEntity admin = session.find(AdminEntity.class, value);
+
+        session.close();
+
+        return admin;
+
+    }
 }
