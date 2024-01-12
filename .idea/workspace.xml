@@ -4,31 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="create new user register">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminChangePasswordFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16e3405963dee78197eea511e98a5e001a602f0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1bf13ebb8edee370c08c47494ef979bc44f3dbdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e51f241a9dd23a8bad8c1606a4226ce8dfe096d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/6069c9b91d8986545216f82160e7107b7e537d36" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae61771e11601799112b1d6f2a38c23cff908ed1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3fc922663473a7dad25c621024ebdb4d1eadb30" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c9a80c611a9f927e858cc41011a2d2ed8f6a9e99" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2c4c6a2401d18e17b7bc6a43b849df4c8a73b4c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f4ea416853d6209eccf86500fa09e9f8e8b93501" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/6/16e3405963dee78197eea511e98a5e001a602f0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/b/1bf13ebb8edee370c08c47494ef979bc44f3dbdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/e/1e51f241a9dd23a8bad8c1606a4226ce8dfe096d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/0/6069c9b91d8986545216f82160e7107b7e537d36" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/ae61771e11601799112b1d6f2a38c23cff908ed1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/3/c3fc922663473a7dad25c621024ebdb4d1eadb30" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/9/c9a80c611a9f927e858cc41011a2d2ed8f6a9e99" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/2/d2c4c6a2401d18e17b7bc6a43b849df4c8a73b4c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/4/f4ea416853d6209eccf86500fa09e9f8e8b93501" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NewUserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/NewUserFormController.java" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="create Admin Login">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/AdminEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/AdminEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -129,6 +106,7 @@
       <workItem from="1704713448495" duration="211000" />
       <workItem from="1704713673019" duration="45446000" />
       <workItem from="1705035764234" duration="1061000" />
+      <workItem from="1705036843971" duration="7092000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -218,7 +196,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704981270587</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="create admin change password feature">
+      <option name="closed" value="true" />
+      <created>1705038059198</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705038059198</updated>
+    </task>
+    <task id="LOCAL-00013" summary="create Admin Login">
+      <option name="closed" value="true" />
+      <created>1705040000214</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705040000214</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +242,8 @@
     <MESSAGE value="create HIbernateUtil" />
     <MESSAGE value="create HibernateUtil" />
     <MESSAGE value="create new user register" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new user register" />
+    <MESSAGE value="create admin change password feature" />
+    <MESSAGE value="create Admin Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Admin Login" />
   </component>
 </project>

@@ -7,4 +7,6 @@ public interface AdminBo extends SuperBo {
     boolean changePassword(AdminDto dto);
 
     boolean authenticate(AdminDto dto);
+
+    String encryptPassword(String password);
 }
