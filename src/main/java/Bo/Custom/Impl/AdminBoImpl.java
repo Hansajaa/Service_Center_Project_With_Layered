@@ -12,10 +12,10 @@ import java.security.NoSuchAlgorithmException;
 
 public class AdminBoImpl implements AdminBo {
 
-    AdminDao<AdminEntity,String> dao = DaoFactory.getInstance().daoType(DaoType.ADMIN);
+    AdminDao dao = DaoFactory.getInstance().daoType(DaoType.ADMIN);
     @Override
     public boolean changePassword(AdminDto dto) {
-        return dao.changePassword(
+        return dao.update(
                 new AdminEntity(
                         dto.getEmail(),
                         encryptPassword(dto.getPassword())

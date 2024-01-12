@@ -1,11 +1,11 @@
 package Dao.Custom;
 
+import Dao.CrudDao;
 import Dao.SuperDao;
 import Dto.AdminDto;
 import Entity.AdminEntity;
 
-public interface AdminDao<T,dataType> extends SuperDao {
-    boolean changePassword(T entity);
+public interface AdminDao extends CrudDao<AdminEntity,String> {
 
-    T authenticate(dataType value);
+    AdminEntity authenticate(String value);
 }

@@ -6,10 +6,21 @@ import Entity.EmployeeEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class EmployeeDaoImpl implements EmployeeDao<EmployeeEntity,String> {
+import java.util.List;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+
 
     @Override
-    public boolean registerEmployee(EmployeeEntity entity) {
+    public EmployeeEntity authenticate(String value) {
+        Session session = HibernateUtil.getSession();
+
+        return session.find(EmployeeEntity.class,value);
+    }
+
+//    Registering Employee
+    @Override
+    public boolean save(EmployeeEntity entity) {
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
         session.save(entity);
@@ -17,9 +28,9 @@ public class EmployeeDaoImpl implements EmployeeDao<EmployeeEntity,String> {
         session.close();
         return true;
     }
-
+//  Change Password
     @Override
-    public boolean changePassword(EmployeeEntity entity) {
+    public boolean update(EmployeeEntity entity) {
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
 
@@ -34,10 +45,12 @@ public class EmployeeDaoImpl implements EmployeeDao<EmployeeEntity,String> {
     }
 
     @Override
-    public EmployeeEntity authenticate(String value) {
-        Session session = HibernateUtil.getSession();
-
-        return session.find(EmployeeEntity.class,value);
+    public boolean delete(String value) {
+        return false;
     }
 
+    @Override
+    public List<EmployeeEntity> getAll() {
+        return null;
+    }
 }

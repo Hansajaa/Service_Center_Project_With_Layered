@@ -6,10 +6,31 @@ import Entity.AdminEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class AdminDaoImpl implements AdminDao<AdminEntity,String> {
+import java.util.List;
+
+public class AdminDaoImpl implements AdminDao{
 
     @Override
-    public boolean changePassword(AdminEntity entity) {
+    public AdminEntity authenticate(String value) {
+        Session session = HibernateUtil.getSession();
+
+        AdminEntity admin = session.find(AdminEntity.class, value);
+
+        session.close();
+
+        return admin;
+
+    }
+
+    @Override
+    public boolean save(AdminEntity entity) {
+        return false;
+    }
+
+//    Change Password
+    @Override
+    public boolean update(AdminEntity entity) {
+
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
 
@@ -24,14 +45,12 @@ public class AdminDaoImpl implements AdminDao<AdminEntity,String> {
     }
 
     @Override
-    public AdminEntity authenticate(String value) {
-        Session session = HibernateUtil.getSession();
+    public boolean delete(String value) {
+        return false;
+    }
 
-        AdminEntity admin = session.find(AdminEntity.class, value);
-
-        session.close();
-
-        return admin;
-
+    @Override
+    public List<AdminEntity> getAll() {
+        return null;
     }
 }

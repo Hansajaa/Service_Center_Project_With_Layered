@@ -1,2 +1,9 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª¯Õ¹øÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª¯Õ¹øÿÿÿÿ8ÄàÎðÏ1
+]	java:S125"<This block of commented-out lines of code should be removed.(„­ú¿ûÿÿÿÿ8¼ÇËñÏ1
+T
+java:S1128"8Remove this unused import 'javax.persistence.OneToMany'.(«õù;8¼ÇËñÏ1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¼ÇËñÏ1
+M
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¼ÇËñÏ1

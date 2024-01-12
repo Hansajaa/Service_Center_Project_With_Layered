@@ -12,10 +12,10 @@ import java.security.NoSuchAlgorithmException;
 
 public class EmployeeBoImpl implements EmployeeBo {
 
-    EmployeeDao<EmployeeEntity,String> dao = DaoFactory.getInstance().daoType(DaoType.EMPLOYEE);
+    EmployeeDao dao = DaoFactory.getInstance().daoType(DaoType.EMPLOYEE);
     @Override
     public boolean registerEmployee(EmployeeDto dto) {
-        boolean isRegistered = dao.registerEmployee(
+        boolean isRegistered = dao.save(
                 new EmployeeEntity(
                         dto.getUsername(),
                         dto.getEmail(),
@@ -28,7 +28,7 @@ public class EmployeeBoImpl implements EmployeeBo {
 
     @Override
     public boolean changePassword(EmployeeDto dto) {
-        boolean isChanged = dao.changePassword(
+        boolean isChanged = dao.update(
                 new EmployeeEntity(
                         dto.getUsername(),
                         dto.getEmail(),

@@ -1,13 +1,11 @@
 package Dao.Custom;
 
+import Dao.CrudDao;
 import Dao.SuperDao;
 import Dto.EmployeeDto;
 import Entity.EmployeeEntity;
 
-public interface EmployeeDao<T,dataType> extends SuperDao {
-    boolean registerEmployee(T entity);
+public interface EmployeeDao extends CrudDao<EmployeeEntity,String> {
 
-    boolean changePassword(T entity);
-
-    T authenticate(dataType value);
+    EmployeeEntity authenticate(String value);
 }
