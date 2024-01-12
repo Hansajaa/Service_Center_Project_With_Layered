@@ -7,5 +7,5 @@ import Entity.EmployeeEntity;
 public interface EmployeeDao<T,dataType> extends SuperDao {
     boolean registerEmployee(T entity);
 
-    boolean updateEmployee(T entity);
+    boolean changePassword(T entity);
 }

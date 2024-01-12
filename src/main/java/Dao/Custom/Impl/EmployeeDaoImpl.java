@@ -19,7 +19,18 @@ public class EmployeeDaoImpl implements EmployeeDao<EmployeeEntity,String> {
     }
 
     @Override
-    public boolean updateEmployee(EmployeeEntity entity) {
-        return false;
+    public boolean changePassword(EmployeeEntity entity) {
+        Session session = HibernateUtil.getSession();
+        Transaction transaction = session.beginTransaction();
+
+        EmployeeEntity employee = session.find(EmployeeEntity.class, entity.getEmail());
+        employee.setPassword(entity.getPassword());
+
+        session.save(employee);
+        transaction.commit();
+        session.close();
+
+        return true;
     }
+
 }

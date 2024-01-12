@@ -6,5 +6,7 @@ import Dto.EmployeeDto;
 public interface EmployeeBo extends SuperBo {
     boolean registerEmployee(EmployeeDto dto);
 
-    boolean updateEmployee(EmployeeDto dto);
+    boolean changePassword(EmployeeDto dto);
+
+    String encryptPassword(String password);
 }

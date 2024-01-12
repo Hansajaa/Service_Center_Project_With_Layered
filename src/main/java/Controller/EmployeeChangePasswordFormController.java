@@ -1,9 +1,9 @@
 package Controller;
 
 import Bo.BoFactory;
-import Bo.Custom.AdminBo;
+import Bo.Custom.EmployeeBo;
 import Dao.util.BoType;
-import Dto.AdminDto;
+import Dto.EmployeeDto;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
@@ -15,29 +15,24 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdminChangePasswordFormController {
-    public BorderPane adminChangePasswordPane;
-    public JFXPasswordField txtPassword;
+public class EmployeeChangePasswordFormController {
+    public BorderPane employeeChangePasswordPane;
     public JFXTextField txtEmail;
+    public JFXPasswordField txtPassword;
 
-
-    AdminBo bo= BoFactory.getInstance().boType(BoType.ADMIN);
-    public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) adminChangePasswordPane.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/AdminLoginForm.fxml"))));
-        stage.show();
-    }
-
+    EmployeeBo bo= BoFactory.getInstance().boType(BoType.EMPLOYEE);
     public void loginButtonOnAction(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) adminChangePasswordPane.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/AdminLoginForm.fxml"))));
+
+        Stage stage = (Stage) employeeChangePasswordPane.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/EmployeeLoginForm.fxml"))));
         stage.show();
     }
 
     public void changePasswordButtonOnAction(ActionEvent actionEvent) {
         try{
             boolean isChanged = bo.changePassword(
-                    new AdminDto(
+                    new EmployeeDto(
+                            null,
                             txtEmail.getText(),
                             txtPassword.getText()
                     )
@@ -52,5 +47,12 @@ public class AdminChangePasswordFormController {
             new Alert(Alert.AlertType.CONFIRMATION,"Try again :(").show();
         }
 
+    }
+
+    public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
+
+        Stage stage = (Stage) employeeChangePasswordPane.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/EmployeeLoginForm.fxml"))));
+        stage.show();
     }
 }
