@@ -1,6 +1,53 @@
 
+Q
+java:S3740!"/Provide the parametrized type for this generic.(º°Çşûÿÿÿÿ8¬ùŒĞ1
+L
+java:S3740""/Provide the parametrized type for this generic.(¾ú€8‘¬ùŒĞ1
+Q
+java:S3740#"/Provide the parametrized type for this generic.(·§İñüÿÿÿÿ8‘¬ùŒĞ1
+L
+java:S3740$"/Provide the parametrized type for this generic.(ºçÎ´8‘¬ùŒĞ1
+m
+java:S1192@"KDefine a constant instead of duplicating this literal "electronic" 3 times.(´É»öüÿÿÿÿ8‘¬ùŒĞ1
+r	java:S117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÈ¤›úÿÿÿÿ8‘¬ùŒĞ1
 t
-java:S1104"WMake productPane a static final constant or non-public and provide accessors if needed.(ïşÍƒ8“ÚŞìÎ1
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î
+java:S1104"WMake productPane a static final constant or non-public and provide accessors if needed.(ïşÍƒ8’¬ùŒĞ1
+q
+java:S1104"TMake category a static final constant or non-public and provide accessors if needed.(íÕÂÒ8’¬ùŒĞ1
+w
+java:S1104"ZMake txtProductName a static final constant or non-public and provide accessors if needed.(•Ôò8’¬ùŒĞ1
+
+java:S1104"]Make electronicRButton a static final constant or non-public and provide accessors if needed.(±Ï£ëıÿÿÿÿ8’¬ùŒĞ1
+
+java:S1104"]Make electricalRButton a static final constant or non-public and provide accessors if needed.(¶Ç¹¤øÿÿÿÿ8’¬ùŒĞ1
+|
+java:S1104 "ZMake txtEmailOfUser a static final constant or non-public and provide accessors if needed.(´Íâåşÿÿÿÿ8’¬ùŒĞ1
+z
+java:S1104!"XMake colProductId a static final constant or non-public and provide accessors if needed.(º°Çşûÿÿÿÿ8’¬ùŒĞ1
+w
+java:S1104""ZMake colProductName a static final constant or non-public and provide accessors if needed.(¾ú€8’¬ùŒĞ1
+y
+java:S1104#"WMake colCategory a static final constant or non-public and provide accessors if needed.(·§İñüÿÿÿÿ8’¬ùŒĞ1
+r
+java:S1104$"UMake colOption a static final constant or non-public and provide accessors if needed.(ºçÎ´8’¬ùŒĞ1
+s
+java:S1104%"VMake tblProduct a static final constant or non-public and provide accessors if needed.(¥ÿéˆ8’¬ùŒĞ1
+~
+java:S1104&"\Make lblNextProductId a static final constant or non-public and provide accessors if needed.(¬áó¶ùÿÿÿÿ8’¬ùŒĞ1
+}
+java:S1104'"`Make lblSelectedProductId a static final constant or non-public and provide accessors if needed.(ß°îæ8’¬ùŒĞ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î8“¬ùŒĞ1
+N
+java:S1602Z",Remove useless curly braces around statement(ÎÈ¤›úÿÿÿÿ8µ¬ùŒĞ1
+b
+java:S2147z"ECombine this catch with the one at line 120, which has the same body.(ıàÑÎ8¶¬ùŒĞ1
 O
-java:S1172"2Remove this unused method parameter "actionEvent".(öÛç‰8ŸˆàìÎ1
+java:S1172"2Remove this unused method parameter "actionEvent".(öÛç‰8¸¬ùŒĞ1
+P
+java:S1172†"2Remove this unused method parameter "actionEvent".(¾™“ù8¾¬ùŒĞ1
+_
+java:S1117ˆ"<Rename "category" which hides the field declared at line 28.(¡îš÷ùÿÿÿÿ8¾¬ùŒĞ1
+P
+java:S1172¦"2Remove this unused method parameter "actionEvent".(°§¾8À¬ùŒĞ1
+_
+java:S1117¨"<Rename "category" which hides the field declared at line 28.(¡îš÷ùÿÿÿÿ8À¬ùŒĞ1

@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="create Admin Login">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/AdminEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/AdminEntity.java" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Initialize CrudDao and apply facade design pattern and stratergy design pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bo/Custom/Impl/ProductBoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bo/Custom/ProductBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DB/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/Custom/Impl/ProductDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/Custom/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dto/Tm/ProductTm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c8254f898df665618daad3a5a2db28989a7e38" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c8254f898df665618daad3a5a2db28989a7e38" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e76837e8e0db1baccfdf0ed24249b7bab6b43042" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e76837e8e0db1baccfdf0ed24249b7bab6b43042" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bo/BoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bo/BoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/util/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/ProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/ProductForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ProductForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +123,8 @@
       <workItem from="1704713673019" duration="45446000" />
       <workItem from="1705035764234" duration="1061000" />
       <workItem from="1705036843971" duration="7092000" />
+      <workItem from="1705055504674" duration="17452000" />
+      <workItem from="1705081224909" duration="17205000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -212,7 +230,39 @@
       <option name="project" value="LOCAL" />
       <updated>1705040000214</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Admin password saved and checking while login with encryption">
+      <option name="closed" value="true" />
+      <created>1705056731688</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705056731688</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Employee Change password with encryption">
+      <option name="closed" value="true" />
+      <created>1705058796242</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705058796242</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Employee login authentication part with MD5 algorithm">
+      <option name="closed" value="true" />
+      <created>1705062251904</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705062251904</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Initialize CrudDao and apply facade design pattern and stratergy design pattern">
+      <option name="closed" value="true" />
+      <created>1705072167270</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1705072167270</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +294,10 @@
     <MESSAGE value="create new user register" />
     <MESSAGE value="create admin change password feature" />
     <MESSAGE value="create Admin Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Admin Login" />
+    <MESSAGE value="Admin password saved and checking while login with encryption" />
+    <MESSAGE value="Employee Change password with encryption" />
+    <MESSAGE value="Employee login authentication part with MD5 algorithm" />
+    <MESSAGE value="Initialize CrudDao and apply facade design pattern and stratergy design pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize CrudDao and apply facade design pattern and stratergy design pattern" />
   </component>
 </project>

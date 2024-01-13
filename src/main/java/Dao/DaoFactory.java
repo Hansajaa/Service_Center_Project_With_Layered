@@ -2,6 +2,7 @@ package Dao;
 
 import Dao.Custom.Impl.AdminDaoImpl;
 import Dao.Custom.Impl.EmployeeDaoImpl;
+import Dao.Custom.Impl.ProductDaoImpl;
 import Dao.util.DaoType;
 
 public class DaoFactory {
@@ -19,6 +20,7 @@ public class DaoFactory {
         switch (type){
             case EMPLOYEE: return (T) new EmployeeDaoImpl();
             case ADMIN: return (T) new AdminDaoImpl();
+            case ITEM: return (T) new ProductDaoImpl();
         }
         return null;
     }

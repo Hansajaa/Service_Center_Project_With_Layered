@@ -21,11 +21,11 @@ public class ProductEntity {
     private String emailOfUser;
 
     @ManyToOne
-    @JoinColumn(name = "user")
+    @JoinColumn(name = "admin")
     private AdminEntity admin;
 
     @ManyToOne
-    @JoinColumn(name = "user")
+    @JoinColumn(name = "employee")
     private EmployeeEntity employee;
 
     public ProductEntity(String productId, String productName, String category, String emailOfUser) {

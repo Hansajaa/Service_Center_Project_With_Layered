@@ -2,6 +2,7 @@ package Dao.util;
 
 import Entity.AdminEntity;
 import Entity.EmployeeEntity;
+import Entity.ProductEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -21,6 +22,7 @@ public class HibernateUtil {
         Metadata metadata = new MetadataSources(standardRegistry)
                 .addAnnotatedClass(AdminEntity.class)
                 .addAnnotatedClass(EmployeeEntity.class)
+                .addAnnotatedClass(ProductEntity.class)
                 .getMetadataBuilder()
                 .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                 .build();
