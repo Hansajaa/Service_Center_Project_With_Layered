@@ -165,3 +165,7 @@ _
 /src/main/java/Bo/Custom/Impl/ProductBoImpl.java,4\9\4942dcff06185e75975764ef056088fd6d8c6b60
 S
 #src/main/java/Dto/Tm/ProductTm.java,8\3\8359a936d7cc9147b066224d90b59f14b2e4a6db
+o
+?src/main/java/Controller/NewUserConfirmationFormController.java,6\5\652d342be0df06e40214a7e25a1e56729e3c83a8
+e
+5src/main/java/Controller/DashboardFormController.java,6\2\62480b88e9f477fd40d3c4f4707a9ece0d21b4f3

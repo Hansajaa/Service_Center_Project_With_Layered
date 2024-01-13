@@ -21,7 +21,7 @@ public class NewUserFormController {
     public JFXTextField txtEmail;
     public JFXTextField txtPassword;
 
-    EmployeeBo bo= BoFactory.getInstance().boType(BoType.EMPLOYEE);
+    EmployeeBo bo = BoFactory.getInstance().boType(BoType.EMPLOYEE);
 
     public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) newUserPane.getScene().getWindow();
@@ -31,21 +31,30 @@ public class NewUserFormController {
     }
 
     public void newAccountButtonOnAction(ActionEvent actionEvent) {
-        boolean isRegistered = bo.registerEmployee(
-                new EmployeeDto(
-                        txtUsername.getText(),
-                        txtEmail.getText(),
-                        txtPassword.getText()
-                )
-        );
+        try{
+            if ((txtUsername.getText().isEmpty() || txtEmail.getText().isEmpty() || txtPassword.getText().isEmpty())){
+                new Alert(Alert.AlertType.CONFIRMATION,"Enter All Details...").show();
+            }else {
+                boolean isRegistered = bo.registerEmployee(
+                        new EmployeeDto(
+                                txtUsername.getText(),
+                                txtEmail.getText(),
+                                txtPassword.getText()
+                        )
+                );
 
-        if (isRegistered){
-            new Alert(Alert.AlertType.CONFIRMATION,"New User Created :)").show();
-            txtUsername.setText("");
-            txtEmail.setText("");
-            txtPassword.setText("");
-        }else{
-            new Alert(Alert.AlertType.CONFIRMATION,"Something Went Wrong :(").show();
+                if (isRegistered){
+                    new Alert(Alert.AlertType.CONFIRMATION,"New User Created :)").show();
+                    txtUsername.setText("");
+                    txtEmail.setText("");
+                    txtPassword.setText("");
+                }else{
+                    new Alert(Alert.AlertType.CONFIRMATION,"Something Went Wrong :(").show();
+                }
+            }
+        }catch (RuntimeException e){
+            new Alert(Alert.AlertType.ERROR,"Enter All Details...").show();
         }
+
     }
 }
