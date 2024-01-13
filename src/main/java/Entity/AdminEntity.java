@@ -12,14 +12,14 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @ToString
-@Entity
+@Entity(name = "admin")
 public class AdminEntity {
     @Id
     private String email;
     private String password;
 
-//    @OneToMany(mappedBy = "adminentity")
-//    private List<ProductEntity> products=new ArrayList<>();
+    @OneToMany(mappedBy = "admin")
+    private List<ProductEntity> product=new ArrayList<>();
 
     public AdminEntity(String email, String password) {
         this.email = email;

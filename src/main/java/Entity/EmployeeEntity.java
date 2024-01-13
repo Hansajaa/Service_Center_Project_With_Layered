@@ -19,8 +19,8 @@ public class EmployeeEntity {
     private String email;
     private String password;
 
-//    @OneToMany(mappedBy = "employee")
-//    private List<ProductEntity> products=new ArrayList<>();
+    @OneToMany(mappedBy = "employee")
+    private List<ProductEntity> products=new ArrayList<>();
 
     public EmployeeEntity(String username, String email, String password) {
         this.username = username;

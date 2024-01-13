@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Initialize CrudDao and apply facade design pattern and stratergy design pattern">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bo/Custom/Impl/ProductBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bo/Custom/ProductBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DB/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/Custom/Impl/ProductDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/Custom/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dto/Tm/ProductTm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c8254f898df665618daad3a5a2db28989a7e38" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c8254f898df665618daad3a5a2db28989a7e38" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e76837e8e0db1baccfdf0ed24249b7bab6b43042" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e76837e8e0db1baccfdf0ed24249b7bab6b43042" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="complete product form">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/1828786d9ef57a77be75878a093f62329d734a1f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/1828786d9ef57a77be75878a093f62329d734a1f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bo/BoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bo/BoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/util/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/ProductEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/ProductForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ProductForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/AdminEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/AdminEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/EmployeeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/EmployeeEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +111,7 @@
       <workItem from="1705035764234" duration="1061000" />
       <workItem from="1705036843971" duration="7092000" />
       <workItem from="1705055504674" duration="17452000" />
-      <workItem from="1705081224909" duration="17205000" />
+      <workItem from="1705081224909" duration="18793000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -262,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705072167270</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="complete product form">
+      <option name="closed" value="true" />
+      <created>1705130693470</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705130693470</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +293,7 @@
     <MESSAGE value="Employee Change password with encryption" />
     <MESSAGE value="Employee login authentication part with MD5 algorithm" />
     <MESSAGE value="Initialize CrudDao and apply facade design pattern and stratergy design pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize CrudDao and apply facade design pattern and stratergy design pattern" />
+    <MESSAGE value="complete product form" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete product form" />
   </component>
 </project>
