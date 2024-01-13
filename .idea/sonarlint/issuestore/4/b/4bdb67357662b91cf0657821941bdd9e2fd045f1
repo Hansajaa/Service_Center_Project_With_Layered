@@ -1,16 +1,0 @@
-
-{
-java:S1104"YMake dashboardPane a static final constant or non-public and provide accessors if needed.(ÜàÑ•şÿÿÿÿ8ëÿÁ—Ğ1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î8ÎùÀÑÎ1
-O
-java:S1172"2Remove this unused method parameter "actionEvent".(öÛç‰8ÕùÀÑÎ1
-O
-java:S1172"2Remove this unused method parameter "actionEvent".(ûàÇâ8ÀºÖçÎ1
-O
-java:S1172"2Remove this unused method parameter "actionEvent".(ñÓ÷8·ÕëìÎ1
-O
-java:S1172%"2Remove this unused method parameter "actionEvent".(‰£–ü8Â ‹ôÎ1
-O
-java:S1172,"2Remove this unused method parameter "actionEvent".(õØ–8Ì¡È¥Ï1
-O
-java:S11723"2Remove this unused method parameter "actionEvent".(ßİ±Ç8ÂÕì¦Ï1

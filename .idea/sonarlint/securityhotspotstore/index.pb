@@ -19,8 +19,6 @@ c
 3src/main/java/Controller/NewUserFormController.java,f\3\f3f35ff3199e1b30d0c7e93df74d5369ac8331c5
 `
 0src/main/java/Controller/HomeFormController.java,1\b\1bd462141a330fb76b9bb34dbbddc2e29ab7e863
-j
-:src/main/java/Controller/AdminDashboardFormController.java,4\b\4bdb67357662b91cf0657821941bdd9e2fd045f1
 Å
 Q.idea/sonarlint/securityhotspotstore/7/6/76cbd090fdced5b7f4fd2a60d5697e5b3a9cc70a,8\e\8e8dd64a5f9c8c9923fbba324a359198f0489935
 w
@@ -169,3 +167,7 @@ o
 ?src/main/java/Controller/NewUserConfirmationFormController.java,6\5\652d342be0df06e40214a7e25a1e56729e3c83a8
 e
 5src/main/java/Controller/DashboardFormController.java,6\2\62480b88e9f477fd40d3c4f4707a9ece0d21b4f3
+X
+(src/main/java/Entity/CustomerEntity.java,8\1\81da44e6c3b5cf96dcd5e6effa693e3ac521f033
+V
+&src/main/java/Entity/OrdersEntity.java,7\5\75f97e8eaefc5c91ade79bf52894e6ba4fb1461c

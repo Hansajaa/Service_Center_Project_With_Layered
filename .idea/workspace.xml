@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="apply ORM for admin,employee and product">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/NewUserConfirmationFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/View/NewUserConfirmationForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c8254f898df665618daad3a5a2db28989a7e38" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c8254f898df665618daad3a5a2db28989a7e38" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bdb67357662b91cf0657821941bdd9e2fd045f1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bdb67357662b91cf0657821941bdd9e2fd045f1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3f35ff3199e1b30d0c7e93df74d5369ac8331c5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3f35ff3199e1b30d0c7e93df74d5369ac8331c5" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="create confirmation for New User Creation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/CustomerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/OrdersEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AdminDashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NewUserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/NewUserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ProductFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/DashboardForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +112,7 @@
       <workItem from="1705035764234" duration="1061000" />
       <workItem from="1705036843971" duration="7092000" />
       <workItem from="1705055504674" duration="17452000" />
-      <workItem from="1705081224909" duration="24271000" />
+      <workItem from="1705081224909" duration="28695000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -273,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705146831788</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="create confirmation for New User Creation">
+      <option name="closed" value="true" />
+      <created>1705152167252</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705152167252</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +312,19 @@
     <MESSAGE value="Initialize CrudDao and apply facade design pattern and stratergy design pattern" />
     <MESSAGE value="complete product form" />
     <MESSAGE value="apply ORM for admin,employee and product" />
-    <option name="LAST_COMMIT_MESSAGE" value="apply ORM for admin,employee and product" />
+    <MESSAGE value="create confirmation for New User Creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="create confirmation for New User Creation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/Entity/OrdersEntity.java</url>
+          <line>28</line>
+          <properties field="customer" class="Entity.OrdersEntity" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
