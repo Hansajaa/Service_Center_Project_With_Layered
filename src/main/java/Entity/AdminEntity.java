@@ -21,6 +21,9 @@ public class AdminEntity {
     @OneToMany(mappedBy = "admin")
     private List<ProductEntity> product=new ArrayList<>();
 
+    @OneToMany(mappedBy = "admin")
+    private List<OrdersEntity> orders=new ArrayList<>();
+
     public AdminEntity(String email, String password) {
         this.email = email;
         this.password = password;

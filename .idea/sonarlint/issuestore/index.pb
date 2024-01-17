@@ -36,8 +36,6 @@ Q.idea/sonarlint/securityhotspotstore/2/6/26c8254f898df665618daad3a5a2db28989a7e
 Å
 Q.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,b\b\bbf202272a96de5cd6b6828ffdc55fb3ce45289c
 Å
-Q.idea/sonarlint/securityhotspotstore/4/b/4bdb67357662b91cf0657821941bdd9e2fd045f1,3\7\37a69553956fc3976f91941831cc2d9467b4b7aa
-Å
 Q.idea/sonarlint/securityhotspotstore/f/3/f3f35ff3199e1b30d0c7e93df74d5369ac8331c5,0\9\0962bc877a18cbb46948b66f95053f6944bde147
 Å
 Q.idea/sonarlint/securityhotspotstore/1/b/1bd462141a330fb76b9bb34dbbddc2e29ab7e863,8\8\8839cfe014e17c8adfea5c815941bf1005805d69
@@ -84,8 +82,6 @@ Q.idea/sonarlint/securityhotspotstore/f/0/f0e0f9cec86fe4b939ae22be5264c758801eb2
 Å
 Q.idea/sonarlint/securityhotspotstore/a/e/ae9ddf453f55affea2d6b9e3973cac1eb2efb4e1,e\3\e36d3b35b0aa033dfcf067b2cd16117a306b1e80
 Å
-Q.idea/sonarlint/securityhotspotstore/3/7/37a69553956fc3976f91941831cc2d9467b4b7aa,6\b\6b6bffb473f702572fa952c181ccabaad6bef967
-Å
 Q.idea/sonarlint/securityhotspotstore/3/7/3791eef2d28bc0db1bee605b47db78a0ed9936bb,b\2\b29881e9c08c7a4ee3876f69a2061c26ea7ffb9f
 w
 G.idea/sonarlint/issuestore/1/6/161d0dbce3a72c5d35e52e448d1c1fd44922be72,6\5\65843945fc4f2c84c8c5f819a7130c06d3fcc057
@@ -117,8 +113,6 @@ w
 G.idea/sonarlint/issuestore/a/e/ae9ddf453f55affea2d6b9e3973cac1eb2efb4e1,6\2\6248197ca7a44d8bc42b5bd6cd80cd6e99143261
 w
 G.idea/sonarlint/issuestore/3/7/3791eef2d28bc0db1bee605b47db78a0ed9936bb,b\b\bb9d669b0a2d43c99aac43df322a067142d75c73
-w
-G.idea/sonarlint/issuestore/3/7/37a69553956fc3976f91941831cc2d9467b4b7aa,8\6\86d774aa24ffead438d6cd12d837b325c59cf0bf
 w
 G.idea/sonarlint/issuestore/0/9/0962bc877a18cbb46948b66f95053f6944bde147,7\b\7b3292f9a59dd7114e56cdf136f6719f97a6822e
 w
@@ -171,3 +165,7 @@ X
 (src/main/java/Entity/CustomerEntity.java,8\1\81da44e6c3b5cf96dcd5e6effa693e3ac521f033
 V
 &src/main/java/Entity/OrdersEntity.java,7\5\75f97e8eaefc5c91ade79bf52894e6ba4fb1461c
+[
++src/main/java/Entity/OrderDetailEntity.java,5\9\59fde9e072092ae0dab50fd998bf51fdbcd61439
+^
+.src/main/java/Entity/OrderDetailKeyEntity.java,8\f\8f22e9b59ae6c8a596a2761532fe7d7e787f027f

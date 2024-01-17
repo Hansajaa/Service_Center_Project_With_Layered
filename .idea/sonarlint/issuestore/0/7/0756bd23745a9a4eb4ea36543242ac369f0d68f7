@@ -1,6 +1,10 @@
 
 w
-java:S1104"ZMake placeOrderPane a static final constant or non-public and provide accessors if needed.(ö—ûô8óô„ôÎ1
+java:S1104"ZMake placeOrderPane a static final constant or non-public and provide accessors if needed.(ö—ûô8óô„ôÎ1
+u
+java:S1104"SMake lblDate a static final constant or non-public and provide accessors if needed.(ÆÃ®•üÿÿÿÿ8§©ˆçĞ1
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î8ôô„ôÎ1
+d
+java:S3986"HMake sure that week Year "YYYY" is expected here instead of Year "yyyy".(œ²ù8ù¤ŠçĞ1
 O
-java:S1172"2Remove this unused method parameter "actionEvent".(öÛç‰8ÿô„ôÎ1
+java:S1172%"2Remove this unused method parameter "actionEvent".(öÛç‰8ÿô„ôÎ1

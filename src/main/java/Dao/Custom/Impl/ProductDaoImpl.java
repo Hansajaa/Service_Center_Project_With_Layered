@@ -83,13 +83,13 @@ public class ProductDaoImpl implements ProductDao {
             System.out.println("product dao");
             return null;
         }
-
+//
 //        Session session = HibernateUtil.getSession();
-//        Query query = session.createQuery("FROM product ORDER BY productId DESC LIMIT 1");
+//        Query query = session.createQuery("FROM product ORDER BY productId DESC");
 //        List<ProductEntity> list = query.list();
 //
 //        if (list!=null){
-//            return list;
+//            return list.get(0);
 //        }
 //        System.out.println("product dao");
 //        return null;

@@ -2,10 +2,7 @@ package Entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Setter
 @Getter
@@ -27,6 +24,9 @@ public class ProductEntity {
     @ManyToOne
     @JoinColumn(name = "employee")
     private EmployeeEntity employee;
+
+
+
 
     public ProductEntity(String productId, String productName, String category, String emailOfUser) {
         this.productId = productId;

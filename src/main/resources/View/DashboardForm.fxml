@@ -70,15 +70,6 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXButton accessibleRole="IMAGE_VIEW" onAction="#newuserButtonOnAction" opacity="0.8" prefHeight="106.0" prefWidth="129.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="1">
-                     <graphic>
-                        <ImageView fitHeight="65.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../Images/new_user.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
                   <JFXButton accessibleRole="IMAGE_VIEW" layoutX="60.0" layoutY="10.0" onAction="#productButtonOnAction" opacity="0.8" prefHeight="106.0" prefWidth="129.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="3">
                      <graphic>
                         <ImageView fitHeight="59.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
@@ -93,6 +84,15 @@
                         <ImageView fitHeight="67.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Images/place_order.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton onAction="#newuserButtonOnAction" prefHeight="81.0" prefWidth="124.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/new_user.png" />
                            </image>
                         </ImageView>
                      </graphic>

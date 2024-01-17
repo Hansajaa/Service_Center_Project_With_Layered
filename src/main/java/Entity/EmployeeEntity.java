@@ -22,6 +22,8 @@ public class EmployeeEntity {
     @OneToMany(mappedBy = "employee")
     private List<ProductEntity> products=new ArrayList<>();
 
+    @OneToMany(mappedBy = "employee")
+    private List<OrdersEntity> orders=new ArrayList<>();
     public EmployeeEntity(String username, String email, String password) {
         this.username = username;
         this.email = email;

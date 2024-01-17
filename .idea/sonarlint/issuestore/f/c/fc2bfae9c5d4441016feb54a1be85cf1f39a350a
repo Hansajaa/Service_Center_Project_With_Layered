@@ -1,6 +1,10 @@
 
 r
-java:S1104"UMake orderPane a static final constant or non-public and provide accessors if needed.(›„£¢8Ä¤¹¥Ï1
+java:S1104"UMake orderPane a static final constant or non-public and provide accessors if needed.(›„£¢8Ä¤¹¥Ï1
+u
+java:S1104"SMake lblDate a static final constant or non-public and provide accessors if needed.(ÆÃ®•üÿÿÿÿ8‹û·ëÐ1
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î
+d
+java:S3986"HMake sure that week Year "YYYY" is expected here instead of Year "yyyy".(œ²ù8¿×¼ëÐ1
 O
-java:S1172"2Remove this unused method parameter "actionEvent".(öÛç‰8Ð˜¼¥Ï1
+java:S1172&"2Remove this unused method parameter "actionEvent".(öÛç‰8Ð˜¼¥Ï1
