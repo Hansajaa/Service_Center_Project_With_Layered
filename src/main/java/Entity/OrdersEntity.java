@@ -26,8 +26,19 @@ public class OrdersEntity {
     private String zone;
     private double total;
 
+    public OrdersEntity(String orderId, String category, String mainItem, String description, String date, String status, String zone, double total) {
+        this.orderId = orderId;
+        this.category = category;
+        this.mainItem = mainItem;
+        this.description = description;
+        this.date = date;
+        this.status = status;
+        this.zone = zone;
+        this.total = total;
+    }
+
     @ManyToOne
-    @JoinColumn(name = "customer")
+    @JoinColumn(name = "customer", nullable = false)
     private CustomerEntity customer;
 
     @OneToMany(mappedBy = "orders")
@@ -41,12 +52,5 @@ public class OrdersEntity {
     @JoinColumn(name = "admin")
     AdminEntity admin;
 
-    public OrdersEntity(String orderId, String category, String mainItem, String description, String date, double total) {
-        this.orderId = orderId;
-        this.category = category;
-        this.mainItem=mainItem;
-        this.description = description;
-        this.date = date;
-        this.total = total;
-    }
+
 }
