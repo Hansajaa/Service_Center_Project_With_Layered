@@ -1,5 +1,6 @@
 package Entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 
 
 
-
+@AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
@@ -20,17 +21,15 @@ public class OrderDetailEntity {
 
     @ManyToOne
     @MapsId("orderId")
-    @JoinColumn(name = "order_Id", nullable = false)
+    @JoinColumn(name = "order_Id")
     OrdersEntity orders;
 
     @ManyToOne
     @MapsId("productId")
-    @JoinColumn(name = "product_Id", nullable = false)
+    @JoinColumn(name = "product_Id")
     ProductEntity product;
 
     private String itemName;
+    private double price;
 
-    public OrderDetailEntity(String itemName) {
-        this.itemName = itemName;
-    }
 }

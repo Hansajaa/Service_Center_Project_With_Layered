@@ -1,5 +1,6 @@
-package Dao.Custom;
+package Dao.Custom.Impl;
 
+import Dao.Custom.CustomerDao;
 import Dao.util.HibernateUtil;
 import Entity.CustomerEntity;
 import org.hibernate.Session;
@@ -7,7 +8,7 @@ import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class CustomerDaoImpl implements CustomerDao{
+public class CustomerDaoImpl implements CustomerDao {
     @Override
     public boolean save(CustomerEntity entity) {
         Session session = HibernateUtil.getSession();

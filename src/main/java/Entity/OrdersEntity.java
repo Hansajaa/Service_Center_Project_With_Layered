@@ -25,8 +25,9 @@ public class OrdersEntity {
     private String status;
     private String zone;
     private double total;
+    private double serviceCharge;
 
-    public OrdersEntity(String orderId, String category, String mainItem, String description, String date, String status, String zone, double total) {
+    public OrdersEntity(String orderId, String category, String mainItem, String description, String date, String status, String zone, double total, double serviceCharge) {
         this.orderId = orderId;
         this.category = category;
         this.mainItem = mainItem;
@@ -35,6 +36,7 @@ public class OrdersEntity {
         this.status = status;
         this.zone = zone;
         this.total = total;
+        this.serviceCharge=serviceCharge;
     }
 
     @ManyToOne

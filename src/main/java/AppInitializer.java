@@ -13,7 +13,7 @@ public class AppInitializer extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("View/HomeForm.fxml"))));
         primaryStage.setTitle("Home");
-        primaryStage.setResizable(false);
+//        primaryStage.setResizable(false);
         primaryStage.show();
     }
 }

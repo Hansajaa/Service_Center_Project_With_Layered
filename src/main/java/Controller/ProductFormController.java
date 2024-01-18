@@ -166,37 +166,41 @@ public class ProductFormController {
     }
 
     public void updateButtonOnAction(ActionEvent actionEvent) {
-        if (txtProductName.getText()!=null && txtEmailOfUser.getText()!=null && (electricalRButton.isSelected() || electronicRButton.isSelected())){
-            String category=null;
-            if (electronicRButton.isSelected()){
-                category="electronic";
+        try{
+            if (txtProductName.getText()!=null && txtEmailOfUser.getText()!=null && (electricalRButton.isSelected() || electronicRButton.isSelected())){
+                String category=null;
+                if (electronicRButton.isSelected()){
+                    category="electronic";
+                }else {
+                    category="electrical";
+                }
+                boolean isUpdated = bo.updateProduct(
+                        new ProductDto(
+                                lblSelectedProductId.getText(),
+                                txtProductName.getText(),
+                                category,
+                                txtEmailOfUser.getText()
+                        )
+                );
+
+                if (isUpdated){
+                    loadProductTable();
+                    new Alert(Alert.AlertType.CONFIRMATION,"Product Updated : )").show();
+                    txtProductName.setText("");
+                    txtEmailOfUser.setText("");
+                    electricalRButton.setSelected(false);
+                    electronicRButton.setSelected(false);
+
+                    lblSelectedProductId.setText("P000");
+                }else {
+                    new Alert(Alert.AlertType.ERROR,"Product Not Updated : (").show();
+                }
+
             }else {
-                category="electrical";
+                new Alert(Alert.AlertType.ERROR,"Enter All Details...").show();
             }
-            boolean isUpdated = bo.updateProduct(
-                    new ProductDto(
-                            lblSelectedProductId.getText(),
-                            txtProductName.getText(),
-                            category,
-                            txtEmailOfUser.getText()
-                    )
-            );
-
-            if (isUpdated){
-                loadProductTable();
-                new Alert(Alert.AlertType.CONFIRMATION,"Product Updated : )").show();
-                txtProductName.setText("");
-                txtEmailOfUser.setText("");
-                electricalRButton.setSelected(false);
-                electronicRButton.setSelected(false);
-
-                lblSelectedProductId.setText("P000");
-            }else {
-                new Alert(Alert.AlertType.ERROR,"Product Not Updated : (").show();
-            }
-
-        }else {
-            new Alert(Alert.AlertType.ERROR,"Enter All Details...").show();
+        }catch (RuntimeException e){
+            new Alert(Alert.AlertType.WARNING,"Something went wrong...Try Again..").show();
         }
     }
 }

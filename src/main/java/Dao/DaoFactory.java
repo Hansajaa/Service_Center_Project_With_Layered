@@ -1,10 +1,6 @@
 package Dao;
 
-import Dao.Custom.CustomerDaoImpl;
-import Dao.Custom.Impl.AdminDaoImpl;
-import Dao.Custom.Impl.EmployeeDaoImpl;
-import Dao.Custom.Impl.OrderDaoImpl;
-import Dao.Custom.Impl.ProductDaoImpl;
+import Dao.Custom.Impl.*;
 import Dao.util.DaoType;
 
 public class DaoFactory {
@@ -25,6 +21,7 @@ public class DaoFactory {
             case ITEM: return (T) new ProductDaoImpl();
             case ORDER: return (T) new OrderDaoImpl();
             case CUSTOMER: return(T) new CustomerDaoImpl();
+            case ORDER_DETAIL: return (T) new OrderDetailDaoImpl();
         }
         return null;
     }

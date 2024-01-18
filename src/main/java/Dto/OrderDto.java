@@ -20,5 +20,5 @@ public class OrderDto {
     private String status;
     private String zone;
     private double total;
-
+    private double serviceCharge;
 }

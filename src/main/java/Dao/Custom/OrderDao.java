@@ -10,4 +10,6 @@ public interface OrderDao extends CrudDao<OrdersEntity,String> {
     String getLastOrderId() throws SQLException, ClassNotFoundException;
 
     boolean saveOrder(OrderDto dto);
+
+    boolean updateTotal(String orderId, double total);
 }

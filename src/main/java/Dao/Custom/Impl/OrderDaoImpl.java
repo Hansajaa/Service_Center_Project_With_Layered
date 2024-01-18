@@ -13,6 +13,7 @@ import Entity.EmployeeEntity;
 import Entity.OrdersEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -44,7 +45,10 @@ public class OrderDaoImpl implements OrderDao {
 
     @Override
     public List<OrdersEntity> getAll() {
-        return null;
+        Session session = HibernateUtil.getSession();
+        Query query = session.createQuery("FROM orders");
+        List<OrdersEntity> list = query.list();
+        return list;
     }
 
     @Override
@@ -81,7 +85,8 @@ public class OrderDaoImpl implements OrderDao {
                     dto.getDate(),
                     dto.getStatus(),
                     dto.getZone(),
-                    dto.getTotal()
+                    dto.getTotal(),
+                    dto.getServiceCharge()
             );
 
             newOrder.setCustomer(customer);
@@ -96,5 +101,21 @@ public class OrderDaoImpl implements OrderDao {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public boolean updateTotal(String orderId, double total) {
+        Session session = HibernateUtil.getSession();
+        Transaction transaction = session.beginTransaction();
+
+        OrdersEntity ordersEntity = session.find(OrdersEntity.class, orderId);
+        ordersEntity.setTotal(total);
+
+
+        session.save(ordersEntity);
+        transaction.commit();
+
+        session.close();
+        return true;
     }
 }

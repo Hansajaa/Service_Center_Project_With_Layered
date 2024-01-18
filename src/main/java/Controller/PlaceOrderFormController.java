@@ -63,6 +63,7 @@ public class PlaceOrderFormController {
         cmbProduct.getSelectionModel().selectedItemProperty().addListener((observableValue, o, selectedName) -> {
             for (ProductDto product:products) {
                 if (product.getProductName().equals(selectedName)){
+                    txtProductId.setEditable(false);
                     txtProductId.setText(product.getProductId());
                 }
             }
@@ -157,6 +158,7 @@ public class PlaceOrderFormController {
                             lblDate.getText(),
                             "Pending",
                             "None",
+                            0.0,
                             0.0
                     )
             );

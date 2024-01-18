@@ -88,8 +88,8 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <JFXTextField focusColor="#2a9d8f" promptText="Order ID" unFocusColor="WHITE" />
-                        <JFXTextField focusColor="#2a9d8f" layoutX="10.0" layoutY="18.0" promptText="Total" unFocusColor="WHITE" GridPane.columnIndex="2" />
+                        <JFXTextField fx:id="txtOrderId" focusColor="#2a9d8f" promptText="Order ID" unFocusColor="WHITE" />
+                        <JFXTextField fx:id="txtTotal" focusColor="#2a9d8f" layoutX="10.0" layoutY="18.0" promptText="Total" unFocusColor="WHITE" GridPane.columnIndex="2" />
                      </children>
                   </GridPane>
                   <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -97,13 +97,16 @@
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="30.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
                     <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <ComboBox prefHeight="31.0" prefWidth="270.0" promptText="Additional Item" />
-                        <JFXTextField focusColor="#2a9d8f" promptText="Price" unFocusColor="WHITE" GridPane.columnIndex="2" />
+                        <ComboBox fx:id="cmbProducts" prefHeight="31.0" prefWidth="270.0" promptText="Additional Item" />
+                        <JFXTextField fx:id="txtProductId" focusColor="#2a9d8f" promptText="Product ID" unFocusColor="WHITE" GridPane.columnIndex="2" />
+                        <JFXTextField fx:id="txtPrice" focusColor="#2a9d8f" layoutX="227.0" layoutY="17.0" promptText="Price" unFocusColor="WHITE" GridPane.columnIndex="4" />
                      </children>
                   </GridPane>
                   <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
@@ -118,7 +121,7 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <JFXButton prefHeight="40.0" prefWidth="141.0" style="-fx-background-color: #2A9D8F; -fx-background-radius: 5px;" text="Update" textFill="WHITE" GridPane.columnIndex="4">
+                        <JFXButton onAction="#addItemButtonOnAction" prefHeight="40.0" prefWidth="141.0" style="-fx-background-color: #2A9D8F; -fx-background-radius: 5px;" text="Add Item" textFill="WHITE" GridPane.columnIndex="4">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
@@ -144,14 +147,14 @@
                 <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <TableView fx:id="tblOrder" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <columns>
-                      <TableColumn prefWidth="90.0" text="Order ID" />
-                      <TableColumn prefWidth="120.0" text="Customer Name" />
-                        <TableColumn prefWidth="112.0" text="Place Date" />
-                        <TableColumn prefWidth="96.0" text="Total" />
-                        <TableColumn prefWidth="114.0" text="Send Alert" />
-                        <TableColumn prefWidth="107.0" text="Bill" />
+                      <TableColumn fx:id="colOrderId" prefWidth="106.0" text="Order ID" />
+                        <TableColumn fx:id="colProduct" prefWidth="111.0" text="Product" />
+                        <TableColumn fx:id="colPlaceDate" prefWidth="118.0" text="Place Date" />
+                        <TableColumn fx:id="colTotal" prefWidth="106.0" text="Total" />
+                        <TableColumn fx:id="colSendAlert" prefWidth="104.0" text="Send Alert" />
+                        <TableColumn fx:id="colBill" prefWidth="94.0" text="Bill" />
                     </columns>
                   </TableView>
                </children>

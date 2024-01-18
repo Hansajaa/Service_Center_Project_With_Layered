@@ -1,9 +1,6 @@
 package Bo;
 
-import Bo.Custom.Impl.AdminBoImpl;
-import Bo.Custom.Impl.EmployeeBoImpl;
-import Bo.Custom.Impl.OrderBoImpl;
-import Bo.Custom.Impl.ProductBoImpl;
+import Bo.Custom.Impl.*;
 import Dao.util.BoType;
 
 public class BoFactory {
@@ -24,6 +21,7 @@ public class BoFactory {
             case ADMIN: return (T) new AdminBoImpl();
             case ITEM: return (T) new ProductBoImpl();
             case ORDER: return (T) new OrderBoImpl();
+            case ORDER_DETAIL: return (T) new OrderDetailBoImpl();
         }
         return null;
     }
