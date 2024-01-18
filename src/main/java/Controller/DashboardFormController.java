@@ -15,8 +15,8 @@ public class DashboardFormController {
 
     public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) dashboardPane.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/HomeForm.fxml"))));
-        stage.setTitle("Home");
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/LogoutAlertForm.fxml"))));
+        stage.setTitle("Logout Confirmation");
         stage.show();
     }
 

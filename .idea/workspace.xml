@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Additional Item adding to the order" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Service Charge add to the order">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/LogoutAlertFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/View/LogoutAlertForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardFormController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -39,7 +46,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Cherry-picking in main",
+    "git-widget-placeholder": "main",
     "last_directory_selection": "D:/E & E Service center Pos,inventry management sys(final javaFX project)/Service Center Project/service-center-project-with-layered-architecture/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -111,7 +118,7 @@
       <workItem from="1705209840023" duration="600000" />
       <workItem from="1705289593939" duration="10594000" />
       <workItem from="1705455951595" duration="19623000" />
-      <workItem from="1705493977605" duration="28343000" />
+      <workItem from="1705493977605" duration="32074000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -305,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705575493691</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Service Charge add to the order">
+      <option name="closed" value="true" />
+      <created>1705577285354</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1705577285354</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +365,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Admin Dashboard interface complete" />
     <MESSAGE value="new user interface design complete" />
     <MESSAGE value="product interface design complete" />
     <MESSAGE value="place order interface design complete" />
@@ -375,6 +389,7 @@
     <MESSAGE value="Add relationship for orders" />
     <MESSAGE value="complete place order without saving who is placing the order" />
     <MESSAGE value="Additional Item adding to the order" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional Item adding to the order" />
+    <MESSAGE value="Service Charge add to the order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Service Charge add to the order" />
   </component>
 </project>
