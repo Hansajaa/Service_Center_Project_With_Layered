@@ -14,4 +14,6 @@ public interface OrderBo extends SuperBo {
     List<OrderDto> getAllOrders();
 
     OrderDto getOrder(String orderId);
+
+    boolean addServiceCharge(OrderDto dto);
 }

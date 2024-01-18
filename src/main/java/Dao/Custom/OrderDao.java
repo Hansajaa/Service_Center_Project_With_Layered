@@ -12,4 +12,6 @@ public interface OrderDao extends CrudDao<OrdersEntity,String> {
     boolean saveOrder(OrderDto dto);
 
     boolean updateTotal(String orderId, double total);
+
+    boolean addServiceCharge(OrdersEntity ordersEntity);
 }

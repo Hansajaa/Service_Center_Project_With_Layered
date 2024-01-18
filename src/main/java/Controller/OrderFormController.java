@@ -51,6 +51,7 @@ public class OrderFormController {
     public TableColumn colBill;
     public TableColumn colSendAlert;
     public TableColumn colProduct;
+    public JFXTextField txtServiceCharge;
 
     ProductBo productBo=BoFactory.getInstance().boType(BoType.ITEM);
 
@@ -178,6 +179,27 @@ public class OrderFormController {
                 loadOrderTable();
             }else {
                 new Alert(Alert.AlertType.WARNING,"Something went wrong...Try Again...").show();
+            }
+        }
+    }
+
+    public void btnServiceCharge(ActionEvent actionEvent) {
+        if (txtOrderId.getText().isEmpty() || txtTotal.getText().isEmpty()){
+            new Alert(Alert.AlertType.ERROR,"Select an Order...").show();
+        } else if (txtServiceCharge.getText().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR,"Enter Service Charge...").show();
+        }else {
+            OrderDto dto=new OrderDto();
+            dto.setOrderId(txtOrderId.getText());
+            dto.setServiceCharge(Double.parseDouble(txtServiceCharge.getText()));
+
+            boolean isAdded = orderBo.addServiceCharge(dto);
+
+            if (isAdded){
+                new Alert(Alert.AlertType.CONFIRMATION,"Service Charge Added...").show();
+                loadOrderTable();
+            }else {
+                new Alert(Alert.AlertType.ERROR,"Service Charge Not Added...Try Again").show();
             }
         }
     }

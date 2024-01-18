@@ -118,4 +118,21 @@ public class OrderDaoImpl implements OrderDao {
         session.close();
         return true;
     }
+
+    @Override
+    public boolean addServiceCharge(OrdersEntity ordersEntity) {
+        Session session = HibernateUtil.getSession();
+        Transaction transaction = session.beginTransaction();
+
+        OrdersEntity order = session.find(OrdersEntity.class, ordersEntity.getOrderId());
+
+        order.setServiceCharge(ordersEntity.getServiceCharge());
+        order.setTotal(order.getTotal()+ordersEntity.getServiceCharge());
+
+        session.save(order);
+        transaction.commit();
+
+        session.close();
+        return true;
+    }
 }

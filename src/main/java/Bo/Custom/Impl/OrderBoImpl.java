@@ -91,4 +91,21 @@ public class OrderBoImpl implements OrderBo {
 
         return null;
     }
+
+    @Override
+    public boolean addServiceCharge(OrderDto dto) {
+        boolean isAdded=false;
+        if (dto==null){
+            return isAdded;
+        } else if (dto.getOrderId()==null) {
+            return isAdded;
+        }else {
+            OrdersEntity ordersEntity=new OrdersEntity();
+            ordersEntity.setOrderId(dto.getOrderId());
+            ordersEntity.setServiceCharge(dto.getServiceCharge());
+
+            isAdded = dao.addServiceCharge(ordersEntity);
+        }
+        return isAdded;
+    }
 }
