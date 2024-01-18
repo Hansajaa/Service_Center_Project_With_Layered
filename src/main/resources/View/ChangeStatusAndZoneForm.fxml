@@ -83,9 +83,9 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextField focusColor="#2a9d8f" promptText="Order ID" unFocusColor="WHITE" />
-                  <ComboBox prefHeight="31.0" prefWidth="187.0" promptText="Status" GridPane.columnIndex="2" />
-                  <ComboBox layoutX="197.0" layoutY="15.0" prefHeight="31.0" prefWidth="187.0" promptText="Zone" GridPane.columnIndex="4" />
+                  <JFXTextField fx:id="txtOrderId" focusColor="#2a9d8f" promptText="Order ID" unFocusColor="WHITE" />
+                  <ComboBox fx:id="cmbStatus" prefHeight="31.0" prefWidth="187.0" promptText="Status" GridPane.columnIndex="2" />
+                  <ComboBox fx:id="cmbZone" layoutX="197.0" layoutY="15.0" prefHeight="31.0" prefWidth="187.0" promptText="Zone" GridPane.columnIndex="4" />
                </children>
             </GridPane>
             <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
@@ -97,19 +97,19 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXButton prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #2A9D8F; -fx-background-radius: 5px;" text="Update" textFill="WHITE" GridPane.columnIndex="1">
+                  <JFXButton onAction="#updateButtonOnAction" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #2A9D8F; -fx-background-radius: 5px;" text="Update" textFill="WHITE" GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </JFXButton>
                </children>
             </GridPane>
-            <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <TableView fx:id="tblOrder" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
               <columns>
-                <TableColumn prefWidth="115.0" text="Order ID" />
-                <TableColumn prefWidth="139.0" text="Place Date" />
-                  <TableColumn prefWidth="137.0" text="Status" />
-                  <TableColumn prefWidth="168.0" text="Zone" />
+                <TableColumn fx:id="colOrderId" prefWidth="115.0" text="Order ID" />
+                <TableColumn fx:id="colPlaceDate" prefWidth="139.0" text="Place Date" />
+                  <TableColumn fx:id="colStatus" prefWidth="137.0" text="Status" />
+                  <TableColumn fx:id="colZone" prefWidth="168.0" text="Zone" />
               </columns>
             </TableView>
          </children>

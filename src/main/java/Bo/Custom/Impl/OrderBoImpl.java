@@ -84,6 +84,7 @@ public class OrderBoImpl implements OrderBo {
                 if (ordersEntity.getOrderId().equals(orderId)){
                     orderDto.setOrderId(ordersEntity.getOrderId());
                     orderDto.setTotal(ordersEntity.getTotal());
+                    orderDto.setStatus(ordersEntity.getStatus());
                     return orderDto;
                 }
             }

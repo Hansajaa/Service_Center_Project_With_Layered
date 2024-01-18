@@ -22,6 +22,7 @@ public class DaoFactory {
             case ORDER: return (T) new OrderDaoImpl();
             case CUSTOMER: return(T) new CustomerDaoImpl();
             case ORDER_DETAIL: return (T) new OrderDetailDaoImpl();
+            case CHANGE_STATUS_ZONE: return (T) new ChangeStatusAndZoneDaoImpl();
         }
         return null;
     }
