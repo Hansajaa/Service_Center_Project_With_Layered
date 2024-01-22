@@ -107,7 +107,7 @@
                   <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextField fx:id="txtProductName" focusColor="#2a9d8f" promptText="Product Name" unFocusColor="WHITE" GridPane.columnIndex="1" />
+                  <JFXTextField fx:id="txtProductName" focusColor="#2a9d8f" promptText="Product Name" styleClass="jfx-text-field" stylesheets="@../Css/textfield.css" unFocusColor="WHITE" GridPane.columnIndex="1" />
                   <Text fill="#fffdfd" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Product category" textAlignment="CENTER" wrappingWidth="399.13671875" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <font>
                         <Font name="System Bold" size="20.0" />
@@ -149,7 +149,7 @@
                            </font></JFXButton>
                      </children>
                   </GridPane>
-                  <JFXTextField fx:id="txtEmailOfUser" focusColor="#2a9d8f" layoutX="110.0" layoutY="12.0" promptText="Email of User" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="txtEmailOfUser" focusColor="#2a9d8f" layoutX="110.0" layoutY="12.0" promptText="Email of User" styleClass="jfx-text-field" stylesheets="@../Css/textfield.css" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
             <GridPane GridPane.rowIndex="3">

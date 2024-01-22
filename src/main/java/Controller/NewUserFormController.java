@@ -4,6 +4,7 @@ import Bo.BoFactory;
 import Bo.Custom.EmployeeBo;
 import Dao.util.BoType;
 import Dto.EmployeeDto;
+import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +20,7 @@ public class NewUserFormController {
     public BorderPane newUserPane;
     public JFXTextField txtUsername;
     public JFXTextField txtEmail;
-    public JFXTextField txtPassword;
+    public JFXPasswordField txtPassword;
 
     EmployeeBo bo = BoFactory.getInstance().boType(BoType.EMPLOYEE);
 

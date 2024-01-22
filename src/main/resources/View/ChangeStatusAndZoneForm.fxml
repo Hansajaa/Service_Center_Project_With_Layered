@@ -83,7 +83,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextField fx:id="txtOrderId" focusColor="#2a9d8f" promptText="Order ID" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtOrderId" focusColor="#2a9d8f" promptText="Order ID" styleClass="jfx-text-field" stylesheets="@../Css/textfield.css" unFocusColor="WHITE" />
                   <ComboBox fx:id="cmbStatus" prefHeight="31.0" prefWidth="187.0" promptText="Status" GridPane.columnIndex="2" />
                   <ComboBox fx:id="cmbZone" layoutX="197.0" layoutY="15.0" prefHeight="31.0" prefWidth="187.0" promptText="Zone" GridPane.columnIndex="4" />
                </children>

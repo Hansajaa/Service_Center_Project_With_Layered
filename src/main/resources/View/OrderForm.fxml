@@ -88,8 +88,8 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <JFXTextField fx:id="txtOrderId" focusColor="#2a9d8f" promptText="Order ID" unFocusColor="WHITE" />
-                        <JFXTextField fx:id="txtTotal" focusColor="#2a9d8f" layoutX="10.0" layoutY="18.0" promptText="Total" unFocusColor="WHITE" GridPane.columnIndex="2" />
+                        <JFXTextField fx:id="txtOrderId" focusColor="#2a9d8f" promptText="Order ID" styleClass="jfx-text-field" stylesheets="@../Css/textfield.css" unFocusColor="WHITE" />
+                        <JFXTextField fx:id="txtTotal" focusColor="#2a9d8f" layoutX="10.0" layoutY="18.0" promptText="Total" styleClass="jfx-text-field" stylesheets="@../Css/textfield.css" unFocusColor="WHITE" GridPane.columnIndex="2" />
                      </children>
                   </GridPane>
                   <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -105,8 +105,8 @@
                     </rowConstraints>
                      <children>
                         <ComboBox fx:id="cmbProducts" prefHeight="31.0" prefWidth="270.0" promptText="Additional Item" />
-                        <JFXTextField fx:id="txtProductId" focusColor="#2a9d8f" promptText="Product ID" unFocusColor="WHITE" GridPane.columnIndex="2" />
-                        <JFXTextField fx:id="txtPrice" focusColor="#2a9d8f" layoutX="227.0" layoutY="17.0" promptText="Price" unFocusColor="WHITE" GridPane.columnIndex="4" />
+                        <JFXTextField fx:id="txtProductId" focusColor="#2a9d8f" promptText="Product ID" styleClass="jfx-text-field" stylesheets="@../Css/textfield.css" unFocusColor="WHITE" GridPane.columnIndex="2" />
+                        <JFXTextField fx:id="txtPrice" focusColor="#2a9d8f" layoutX="227.0" layoutY="17.0" promptText="Price" styleClass="jfx-text-field" stylesheets="@../Css/textfield.css" unFocusColor="WHITE" GridPane.columnIndex="4" />
                      </children>
                   </GridPane>
                   <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
@@ -126,7 +126,7 @@
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </JFXButton>
-                        <JFXTextField fx:id="txtServiceCharge" focusColor="#2a9d8f" promptText="Service Charge" unFocusColor="WHITE" />
+                        <JFXTextField fx:id="txtServiceCharge" focusColor="#2a9d8f" promptText="Service Charge" styleClass="jfx-text-field" stylesheets="@../Css/textfield.css" unFocusColor="WHITE" />
                         <JFXButton layoutX="510.0" layoutY="10.0" onAction="#btnServiceCharge" prefHeight="38.0" prefWidth="193.0" style="-fx-background-color: #2A9D8F; -fx-background-radius: 5px;" text="Add Service Charge" textFill="WHITE" GridPane.columnIndex="2">
                            <font>
                               <Font name="System Bold" size="15.0" />

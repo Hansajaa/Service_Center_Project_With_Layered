@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Logout Confirmation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bo/Custom/ChangeStatusAndZoneBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bo/Custom/Impl/ChangeStatusAndZoneBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/Custom/ChangeStatusAndZoneDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/Custom/Impl/ChangeStatusAndZoneDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dto/ChangeStatusAndZoneDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dto/Tm/ChangeStatusAndZoneTm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0988a65506a5d2cb6f35e93a907bde3c8d84e36" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0988a65506a5d2cb6f35e93a907bde3c8d84e36" afterDir="false" />
+    <list default="true" id="a4be5433-77cc-4f70-9f85-9bca178cfb10" name="Changes" comment="Change Status and Zone">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bo/BoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bo/BoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bo/Custom/Impl/OrderBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bo/Custom/Impl/OrderBoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ChangeStatusAndZoneFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ChangeStatusAndZoneFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/util/BoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/util/BoType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/util/DaoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/util/DaoType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/ChangeStatusAndZoneForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ChangeStatusAndZoneForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,30 +36,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_directory_selection": "D:/E & E Service center Pos,inventry management sys(final javaFX project)/Service Center Project/service-center-project-with-layered-architecture/src/main/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/E &amp; E Service center Pos,inventry management sys(final javaFX project)/Service Center Project/service-center-project-with-layered-architecture/src/main/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\E &amp; E Service center Pos,inventry management sys(final javaFX project)\Service Center Project\service-center-project-with-layered-architecture\src\main\resources\Images" />
@@ -129,7 +115,9 @@
       <workItem from="1705209840023" duration="600000" />
       <workItem from="1705289593939" duration="10594000" />
       <workItem from="1705455951595" duration="19623000" />
-      <workItem from="1705493977605" duration="38432000" />
+      <workItem from="1705493977605" duration="41624000" />
+      <workItem from="1705815134345" duration="304000" />
+      <workItem from="1705912565283" duration="2169000" />
     </task>
     <task id="LOCAL-00001" summary="Admin Dashboard interface complete">
       <option name="closed" value="true" />
@@ -339,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705585844667</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Change Status and Zone">
+      <option name="closed" value="true" />
+      <created>1705603859763</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1705603859763</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +380,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="product interface design complete" />
     <MESSAGE value="place order interface design complete" />
     <MESSAGE value="Home.fxml file create" />
     <MESSAGE value="Create employee login page, home page and set navigation" />
@@ -409,6 +404,7 @@
     <MESSAGE value="Additional Item adding to the order" />
     <MESSAGE value="Service Charge add to the order" />
     <MESSAGE value="Logout Confirmation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logout Confirmation" />
+    <MESSAGE value="Change Status and Zone" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Status and Zone" />
   </component>
 </project>
