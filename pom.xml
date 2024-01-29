@@ -66,6 +66,13 @@
             <version>5.6.15.Final</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.jasypt</groupId>
+            <artifactId>jasypt</artifactId>
+            <version>1.9.3</version>
+            <scope>compile</scope>
+        </dependency>
+
     </dependencies>
 
 

@@ -6,6 +6,7 @@ import Dao.DaoFactory;
 import Dao.util.DaoType;
 import Dto.EmployeeDto;
 import Entity.EmployeeEntity;
+import org.jasypt.util.password.StrongPasswordEncryptor;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -15,11 +16,15 @@ public class EmployeeBoImpl implements EmployeeBo {
     EmployeeDao dao = DaoFactory.getInstance().daoType(DaoType.EMPLOYEE);
     @Override
     public boolean registerEmployee(EmployeeDto dto) {
+
+        StrongPasswordEncryptor encryptor = new StrongPasswordEncryptor();
+
         boolean isRegistered = dao.save(
                 new EmployeeEntity(
                         dto.getUsername(),
                         dto.getEmail(),
-                        encryptPassword(dto.getPassword())
+                        encryptor.encryptPassword(dto.getPassword())
+                        //encryptPassword(dto.getPassword())
                 )
         );
 
@@ -28,11 +33,15 @@ public class EmployeeBoImpl implements EmployeeBo {
 
     @Override
     public boolean changePassword(EmployeeDto dto) {
+
+        StrongPasswordEncryptor encryptor = new StrongPasswordEncryptor();
+
         boolean isChanged = dao.update(
                 new EmployeeEntity(
                         dto.getUsername(),
                         dto.getEmail(),
-                        encryptPassword(dto.getPassword())
+                        encryptor.encryptPassword(dto.getPassword())
+                        //encryptPassword(dto.getPassword())
                 )
         );
 
@@ -40,6 +49,8 @@ public class EmployeeBoImpl implements EmployeeBo {
 
     }
 
+
+//    MD5 algorithm
     @Override
     public String encryptPassword(String password) {
         /* Plain-text password initialization. */
@@ -74,10 +85,18 @@ public class EmployeeBoImpl implements EmployeeBo {
     public boolean authenticate(EmployeeDto dto) {
         EmployeeEntity employee = dao.authenticate(dto.getEmail());
 
-        if (employee.getPassword().equals(encryptPassword(dto.getPassword()))){
+        StrongPasswordEncryptor encryptor = new StrongPasswordEncryptor();
+
+        if (encryptor.checkPassword(dto.getPassword(), employee.getPassword())){
             return true;
         }
         return false;
+//        if (employee.getPassword().equals(encryptPassword(dto.getPassword()))){
+//            return true;
+//        }
+//        return false;
+
+
 
     }
 }
