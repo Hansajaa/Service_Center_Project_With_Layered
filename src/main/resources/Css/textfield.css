@@ -3,3 +3,7 @@
     -fx-prompt-text-fill: WHITE;
     -fx-text-inner-color: white;
 }
+
+.otp-text-field{
+    -fx-text-fill:Black;
+}

@@ -41,7 +41,8 @@ public class AdminChangePasswordFormController {
     }
 
     public void changePasswordButtonOnAction(ActionEvent actionEvent) throws IOException {
-        String otp=otpNum1.getText()+otpNum2.getText()+otpNum3.getText()+otpNum4.getText()+otpNum5.getText()+otpNum6.getText();
+
+        String otp = otpNum1.getText()+otpNum2.getText()+otpNum3.getText()+otpNum4.getText()+otpNum5.getText()+otpNum6.getText();
 
         if (currentOtpCode.equals(otp) && isEmailVerified) {
             try{
@@ -69,6 +70,8 @@ public class AdminChangePasswordFormController {
             }catch (RuntimeException e){
                 new Alert(Alert.AlertType.CONFIRMATION,"Try again :(").show();
             }
+        }else {
+            new Alert(Alert.AlertType.WARNING,"Enter Valid OTP").show();
         }
 
     }
