@@ -11,4 +11,10 @@ public interface EmployeeBo extends SuperBo {
     String encryptPassword(String password);
 
     boolean authenticate(EmployeeDto dto);
+
+    String sendOtp(String mail);
+
+    String generateOtp();
+
+    void mailSend(String mail,String subject,String message);
 }
