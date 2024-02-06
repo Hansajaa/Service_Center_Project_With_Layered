@@ -6,9 +6,18 @@ import Dao.DaoFactory;
 import Dao.util.DaoType;
 import Dto.AdminDto;
 import Entity.AdminEntity;
+import jakarta.mail.*;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeBodyPart;
+import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMultipart;
+import javafx.scene.control.Alert;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
+import java.util.Properties;
+import java.util.Random;
 
 public class AdminBoImpl implements AdminBo {
 
@@ -62,4 +71,72 @@ public class AdminBoImpl implements AdminBo {
 
         return encryptedpassword;
     }
+
+    @Override
+    public String sendOtp(String mail) {
+        AdminEntity admin = dao.authenticate(mail);
+
+        if (admin!=null){
+            String otp = generateOtp();
+            mailSend(mail,"OTP Code",otp);
+            return otp;
+        }else {
+            return null;
+        }
+    }
+
+    @Override
+    public String generateOtp() {
+        String numbers = "0123456789";
+        Random r = new Random();
+        char[] otp = new char[6];
+        for (int i = 0; i < 6; i++) {
+            otp[i] = numbers.charAt(r.nextInt(numbers.length()));
+        }
+        return new String(otp);
+    }
+
+    @Override
+    public void mailSend(String mail, String subject, String message){
+        // Replace these values with your email configuration
+        final String from = "hansajanilana@gmail.com";
+        final String password = "efjm axwy atmg ubsj";
+
+        Properties prop = new Properties();
+        prop.put("mail.smtp.auth", true);
+        prop.put("mail.smtp.starttls.enable", "true");
+        prop.put("mail.smtp.host", "smtp.gmail.com");
+        prop.put("mail.smtp.port", "587");
+        prop.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+
+        jakarta.mail.Session session = Session.getInstance(prop, new Authenticator() {
+            @Override
+            protected jakarta.mail.PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(from, password);
+            }
+        });
+
+        try {
+            jakarta.mail.Message msg = new MimeMessage(session);
+            msg.setFrom(new InternetAddress(from));
+            msg.setRecipients(
+                    Message.RecipientType.TO, InternetAddress.parse(mail));
+            msg.setSubject(subject);
+
+            MimeBodyPart mimeBodyPart = new MimeBodyPart();
+            mimeBodyPart.setContent(message, "text/html; charset=utf-8");
+
+            Multipart multipart = new MimeMultipart();
+            multipart.addBodyPart(mimeBodyPart);
+
+            msg.setContent(multipart);
+
+            Transport.send(msg);
+
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

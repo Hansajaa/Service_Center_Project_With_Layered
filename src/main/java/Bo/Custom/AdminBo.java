@@ -9,4 +9,10 @@ public interface AdminBo extends SuperBo {
     boolean authenticate(AdminDto dto);
 
     String encryptPassword(String password);
+
+    String sendOtp(String mail);
+
+    String generateOtp();
+
+    void mailSend(String mail,String subject,String message);
 }
