@@ -131,7 +131,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton accessibleRole="IMAGE_VIEW" layoutX="248.0" layoutY="10.0" opacity="0.8" prefHeight="176.0" prefWidth="258.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="5">
+                  <JFXButton accessibleRole="IMAGE_VIEW" layoutX="248.0" layoutY="10.0" onAction="#reportsButtonOnAction" opacity="0.8" prefHeight="176.0" prefWidth="258.0" style="-fx-background-color: #1A333C; -fx-background-radius: 10px;" textFill="#1a333c" GridPane.columnIndex="5">
                      <graphic>
                         <ImageView fitHeight="59.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
                            <image>

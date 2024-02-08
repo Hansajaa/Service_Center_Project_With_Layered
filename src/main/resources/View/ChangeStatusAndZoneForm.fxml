@@ -106,10 +106,12 @@
             </GridPane>
             <TableView fx:id="tblOrder" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
               <columns>
-                <TableColumn fx:id="colOrderId" prefWidth="115.0" text="Order ID" />
-                <TableColumn fx:id="colPlaceDate" prefWidth="139.0" text="Place Date" />
-                  <TableColumn fx:id="colStatus" prefWidth="137.0" text="Status" />
-                  <TableColumn fx:id="colZone" prefWidth="168.0" text="Zone" />
+                <TableColumn fx:id="colOrderId" prefWidth="88.0" text="Order ID" />
+                <TableColumn fx:id="colPlaceDate" prefWidth="103.0" text="Place Date" />
+                  <TableColumn fx:id="colStatus" prefWidth="88.0" text="Status" />
+                  <TableColumn fx:id="colZone" prefWidth="105.0" text="Zone" />
+                  <TableColumn fx:id="colSendAlert" prefWidth="113.0" text="Send Alert" />
+                  <TableColumn fx:id="colBill" prefWidth="60.0" text="Bill" />
               </columns>
             </TableView>
          </children>

@@ -1,12 +1,19 @@
 package Controller;
 
+import DB.DBConnection;
+import Dao.util.HibernateUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class DashboardFormController {
 
@@ -53,5 +60,16 @@ public class DashboardFormController {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/ChangeStatusAndZoneForm.fxml"))));
         stage.setTitle("Change Zone & Change Status");
         stage.show();
+    }
+
+    public void reportsButtonOnAction(ActionEvent actionEvent) {
+        try {
+            JasperDesign design = JRXmlLoader.load("src/main/resources/Report/sales_report.jrxml");
+            JasperReport jasperReport = JasperCompileManager.compileReport(design);
+            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, DBConnection.getInstance().getConnection());
+            JasperViewer.viewReport(jasperPrint,false);
+        } catch (JRException | SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

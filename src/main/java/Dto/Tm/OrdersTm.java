@@ -13,6 +13,4 @@ public class OrdersTm {
     private String mainItem;
     private String date;
     private double total;
-    private JFXButton btnSendAlert;
-    private JFXButton btnBill;
 }

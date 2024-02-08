@@ -149,12 +149,10 @@
                <children>
                   <TableView fx:id="tblOrder" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <columns>
-                      <TableColumn fx:id="colOrderId" prefWidth="106.0" text="Order ID" />
-                        <TableColumn fx:id="colProduct" prefWidth="111.0" text="Product" />
-                        <TableColumn fx:id="colPlaceDate" prefWidth="118.0" text="Place Date" />
-                        <TableColumn fx:id="colTotal" prefWidth="106.0" text="Total" />
-                        <TableColumn fx:id="colSendAlert" prefWidth="104.0" text="Send Alert" />
-                        <TableColumn fx:id="colBill" prefWidth="94.0" text="Bill" />
+                      <TableColumn fx:id="colOrderId" prefWidth="131.0" text="Order ID" />
+                        <TableColumn fx:id="colProduct" prefWidth="182.0" text="Product" />
+                        <TableColumn fx:id="colPlaceDate" prefWidth="168.0" text="Place Date" />
+                        <TableColumn fx:id="colTotal" prefWidth="156.0" text="Total" />
                     </columns>
                   </TableView>
                </children>

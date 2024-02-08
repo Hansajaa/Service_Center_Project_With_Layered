@@ -76,8 +76,6 @@ public class OrderFormController {
         colProduct.setCellValueFactory(new PropertyValueFactory<>("mainItem"));
         colPlaceDate.setCellValueFactory(new PropertyValueFactory<>("date"));
         colTotal.setCellValueFactory(new PropertyValueFactory<>("total"));
-        colSendAlert.setCellValueFactory(new PropertyValueFactory<>("btnSendAlert"));
-        colBill.setCellValueFactory(new PropertyValueFactory<>("btnBill"));
 
         tblOrder.getSelectionModel().selectedItemProperty().addListener((observableValue, ordersTm, newRow) -> {
             if (newRow!=null){
@@ -104,19 +102,12 @@ public class OrderFormController {
 
         for (OrderDto dto:allOrders) {
 
-            JFXButton btnSendAlert=new JFXButton("Send Alert");
-            JFXButton btnBill=new JFXButton("Bill");
-            btnSendAlert.setStyle("-fx-background-color:  #d93535; -fx-text-fill: white;");
-            btnBill.setStyle("-fx-background-color:  #2A9D8F; -fx-text-fill: white;");
-
             ordersTms.add(
                     new OrdersTm(
                             dto.getOrderId(),
                             dto.getMainItem(),
                             dto.getDate(),
-                            dto.getTotal(),
-                            btnSendAlert,
-                            btnBill
+                            dto.getTotal()
                     )
             );
 

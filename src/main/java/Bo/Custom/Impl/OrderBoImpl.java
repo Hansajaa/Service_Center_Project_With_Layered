@@ -82,9 +82,17 @@ public class OrderBoImpl implements OrderBo {
 
             for (OrdersEntity ordersEntity:allOrders) {
                 if (ordersEntity.getOrderId().equals(orderId)){
+
                     orderDto.setOrderId(ordersEntity.getOrderId());
+                    orderDto.setMainItem(ordersEntity.getMainItem());
+                    orderDto.setCategory(ordersEntity.getCategory());
+                    orderDto.setDescription(ordersEntity.getDescription());
+                    orderDto.setDate(ordersEntity.getDate());
                     orderDto.setTotal(ordersEntity.getTotal());
                     orderDto.setStatus(ordersEntity.getStatus());
+                    orderDto.setServiceCharge(ordersEntity.getServiceCharge());
+                    orderDto.setCustomerEmail(ordersEntity.getCustomer().getEmail());
+
                     return orderDto;
                 }
             }

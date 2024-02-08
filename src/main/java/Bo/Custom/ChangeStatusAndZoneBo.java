@@ -13,4 +13,10 @@ public interface ChangeStatusAndZoneBo extends SuperBo {
 
     boolean update(ChangeStatusAndZoneDto dto);
 
+    boolean sendAlert(String orderId);
+
+    boolean sendBill(String orderId);
+
+    void sendMail(String to,String subject, String message);
+
 }

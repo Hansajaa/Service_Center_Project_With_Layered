@@ -1,5 +1,6 @@
 package Dto.Tm;
 
+import com.jfoenix.controls.JFXButton;
 import lombok.*;
 
 @AllArgsConstructor
@@ -12,4 +13,6 @@ public class ChangeStatusAndZoneTm {
     private String date;
     private String status;
     private String zone;
+    private JFXButton btnSendAlert;
+    private JFXButton btnBill;
 }

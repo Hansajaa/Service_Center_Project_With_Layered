@@ -7,6 +7,7 @@ import Dao.util.BoType;
 import Dto.ChangeStatusAndZoneDto;
 import Dto.OrderDto;
 import Dto.Tm.ChangeStatusAndZoneTm;
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -43,6 +44,8 @@ public class ChangeStatusAndZoneFormController {
     public TableColumn colStatus;
     public TableColumn colZone;
     public TableColumn colPlaceDate;
+    public TableColumn colSendAlert;
+    public TableColumn colBill;
 
     ChangeStatusAndZoneBo bo= BoFactory.getInstance().boType(BoType.CHANGE_STATUS_ZONE);
 
@@ -57,6 +60,8 @@ public class ChangeStatusAndZoneFormController {
         colPlaceDate.setCellValueFactory(new PropertyValueFactory<>("date"));
         colStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
         colZone.setCellValueFactory(new PropertyValueFactory<>("zone"));
+        colSendAlert.setCellValueFactory(new PropertyValueFactory<>("btnSendAlert"));
+        colBill.setCellValueFactory(new PropertyValueFactory<>("btnBill"));
 
         loadOrders();
 
@@ -78,17 +83,50 @@ public class ChangeStatusAndZoneFormController {
         ObservableList<ChangeStatusAndZoneTm> tms=FXCollections.observableArrayList();
 
         for (OrderDto dto:allOrders) {
+            JFXButton btnSendAlert=new JFXButton("Send Alert");
+            JFXButton btnBill=new JFXButton("Bill");
+            btnSendAlert.setStyle("-fx-background-color:  #d93535; -fx-text-fill: white;");
+            btnBill.setStyle("-fx-background-color:  #2A9D8F; -fx-text-fill: white;");
+
+            btnSendAlert.setOnAction(actionEvent -> {
+                sendAlert(dto.getOrderId());
+            });
+
+            btnBill.setOnAction(ActionEvent->{
+                sendBill(dto.getOrderId());
+            });
             tms.add(
                     new ChangeStatusAndZoneTm(
                             dto.getOrderId(),
                             dto.getDate(),
                             dto.getStatus(),
-                            dto.getZone()
+                            dto.getZone(),
+                            btnSendAlert,
+                            btnBill
                     )
             );
         }
 
         tblOrder.setItems(tms);
+    }
+
+    private void sendBill(String orderId) {
+        boolean isBillSend = bo.sendBill(orderId);
+        if (isBillSend){
+            new Alert(Alert.AlertType.CONFIRMATION,"Bill Send Successfully :)").show();
+        }else {
+            new Alert(Alert.AlertType.ERROR,"Something went wrong :(").show();
+        }
+    }
+
+    private void sendAlert(String orderId) {
+        boolean isAlertSend = bo.sendAlert(orderId);
+
+        if (isAlertSend){
+            new Alert(Alert.AlertType.CONFIRMATION,"Alert Send Successfully :)").show();
+        }else {
+            new Alert(Alert.AlertType.ERROR,"Something went wrong :(").show();
+        }
     }
 
     private void loadZones() {
